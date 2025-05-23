@@ -1,4 +1,4 @@
-/* General Body and Container Styles */
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -99,7 +99,19 @@ body {
     background-color: #005A99;
 }
 
-/* GridPanel Styling */
+/* Command Palette (Input Field) */
+.command-palette {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #666;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Grid Panel Styling */
 .grid-stack {
     display: flex;
     flex-wrap: wrap;
