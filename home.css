@@ -15,7 +15,7 @@ body {
     height: 100%;
 }
 
-/* Left Sidebar */
+/* Sidebar */
 .sidebar {
     width: 250px;
     background-color: #2C2C2E;
@@ -58,7 +58,7 @@ body {
     background-color: #0078D4;
 }
 
-/* Main Content Area */
+/* Main Content */
 .main-content {
     flex: 1;
     padding: 40px;
@@ -100,7 +100,7 @@ body {
     background-color: #005A99;
 }
 
-/* Command Palette (Terminal-like search bar) */
+/* Command Palette */
 .command-palette {
     width: 100%;
     padding: 10px;
@@ -112,7 +112,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Work Area (GridStack Panels) */
+/* GridPanel Styling */
 .work-area {
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +157,7 @@ body {
     background-color: #005A99;
 }
 
-/* Terminal Pane (at bottom) */
+/* Terminal Pane */
 .terminal-pane {
     background-color: #2C2C2E;
     color: white;
