@@ -22,7 +22,7 @@
 <body>
 
     <div class="container">
-        <!-- Left Sidebar (Explorer) -->
+        <!-- Left Sidebar (Vertical Stack of Panels) -->
         <aside class="sidebar">
             <div class="logo">
                 <h2>Solon</h2>
@@ -36,9 +36,8 @@
             </ul>
         </aside>
 
-        <!-- Main Console Area -->
+        <!-- Main Content Area (Right Split) -->
         <main class="main-content">
-            <!-- Top Header -->
             <header class="header">
                 <div class="header-left">
                     <span>Welcome, User</span>
@@ -51,46 +50,41 @@
             <!-- Command Palette (Terminal-like search bar) -->
             <input type="text" id="command-palette" class="command-palette" placeholder="Type a command..." />
 
-            <!-- Main Work Area -->
-            <section class="work-area">
-                <div class="grid-stack" id="grid-stack">
-                    <!-- Pending Transactions Panel -->
-                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                        <div class="grid-stack-item-content">
-                            <h3>Pending Transactions</h3>
-                            <p>3 pending transactions</p>
-                            <button onclick="viewTransactions()">View</button>
+            <div class="right-panel">
+                <!-- Upper Section -->
+                <section class="right-upper">
+                    <div class="grid-stack" id="grid-stack">
+                        <!-- Pending Transactions Panel -->
+                        <div class="grid-stack-item" data-gs-width="6" data-gs-height="3">
+                            <div class="grid-stack-item-content">
+                                <h3>Pending Transactions</h3>
+                                <p>3 pending transactions</p>
+                                <button onclick="viewTransactions()">View</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Completed Transactions Panel -->
-                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                        <div class="grid-stack-item-content">
-                            <h3>Completed Transactions</h3>
-                            <p>12 completed transactions</p>
-                            <button onclick="viewCompleted()">View</button>
+                        <!-- Completed Transactions Panel -->
+                        <div class="grid-stack-item" data-gs-width="6" data-gs-height="3">
+                            <div class="grid-stack-item-content">
+                                <h3>Completed Transactions</h3>
+                                <p>12 completed transactions</p>
+                                <button onclick="viewCompleted()">View</button>
+                            </div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- Documents Panel -->
-                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                        <div class="grid-stack-item-content">
-                            <h3>Documents</h3>
-                            <p>Manage your documents here</p>
-                            <button onclick="uploadDocument()">Upload</button>
+                <!-- Lower Section (Terminal) -->
+                <section class="right-lower">
+                    <div class="terminal-pane">
+                        <div class="terminal-header">
+                            <span>Terminal</span>
                         </div>
+                        <textarea id="terminal" placeholder="Type commands here..."></textarea>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-    </div>
-
-    <!-- Terminal Pane -->
-    <div class="terminal-pane">
-        <div class="terminal-header">
-            <span>Terminal</span>
-        </div>
-        <textarea id="terminal" placeholder="Type commands here..."></textarea>
     </div>
 
     <!-- GridStack JS -->
@@ -99,8 +93,8 @@
     <script>
         // Initialize GridStack for draggable and resizable functionality
         const grid = GridStack.init({
-            staticGrid: false, 
-            animate: true, 
+            staticGrid: false,
+            animate: true,
             float: true,
         });
 
@@ -122,19 +116,13 @@
             // Add functionality to view completed transactions here
         }
 
-        // Function to handle document upload
-        function uploadDocument() {
-            alert('Document Upload Page');
-            // Implement document upload functionality here
-        }
-
         // Command Palette functionality for terminal-like commands
         const commandPalette = document.getElementById("command-palette");
         commandPalette.addEventListener("keypress", function (event) {
             if (event.key === "Enter") {
                 let command = commandPalette.value.trim().toLowerCase();
                 executeCommand(command);
-                commandPalette.value = '';  // Reset input after command
+                commandPalette.value = '';  // Reset input
             }
         });
 
@@ -146,9 +134,6 @@
                     break;
                 case "view completed":
                     viewCompleted();
-                    break;
-                case "upload document":
-                    uploadDocument();
                     break;
                 default:
                     alert("Unknown command: " + command);
