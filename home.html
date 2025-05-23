@@ -9,17 +9,17 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- GridStack CSS (for draggable, resizable grids) -->
+    <!-- GridStack CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <div class="container">
-        <!-- Sidebar for Navigation -->
+        <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="logo">
                 <h2>Solon</h2>
@@ -33,9 +33,9 @@
             </ul>
         </aside>
 
-        <!-- Main Content (Resizable Panels) -->
+        <!-- Main Console (Resizable Panels) -->
         <main class="main-content">
-            <!-- Top Header -->
+            <!-- Header -->
             <header class="header">
                 <div class="header-left">
                     <span>Welcome, User</span>
@@ -45,9 +45,12 @@
                 </div>
             </header>
 
-            <!-- GridStack (Draggable/Resizable Panels) -->
+            <!-- Command Palette (Terminal-like Search Bar) -->
+            <input type="text" id="command-palette" class="command-palette" placeholder="Type a command..." />
+
+            <!-- GridStack (Panels for User Interaction) -->
             <div class="grid-stack" id="grid-stack">
-                <!-- Pending Transactions Panel -->
+                <!-- Panel 1: Pending Transactions -->
                 <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
                     <div class="grid-stack-item-content">
                         <h3>Pending Transactions</h3>
@@ -56,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Completed Transactions Panel -->
+                <!-- Panel 2: Completed Transactions -->
                 <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
                     <div class="grid-stack-item-content">
                         <h3>Completed Transactions</h3>
@@ -65,7 +68,7 @@
                     </div>
                 </div>
 
-                <!-- Documents Panel -->
+                <!-- Panel 3: Document Management -->
                 <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
                     <div class="grid-stack-item-content">
                         <h3>Documents</h3>
@@ -74,7 +77,7 @@
                     </div>
                 </div>
 
-                <!-- User Notifications Panel -->
+                <!-- Panel 4: Notifications -->
                 <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
                     <div class="grid-stack-item-content">
                         <h3>Notifications</h3>
@@ -83,7 +86,7 @@
                     </div>
                 </div>
 
-                <!-- Recent Activity Panel -->
+                <!-- Panel 5: Recent Activity -->
                 <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
                     <div class="grid-stack-item-content">
                         <h3>Recent Activity</h3>
@@ -95,7 +98,7 @@
         </main>
     </div>
 
-    <!-- GridStack JS (for draggable, resizable grids) -->
+    <!-- GridStack JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.all.js"></script>
 
     <script>
@@ -103,7 +106,16 @@
         const grid = GridStack.init({
             staticGrid: false,  // Allow resizing and dragging
             animate: true,
-            float: true,  // Allow floating widgets that can be dragged anywhere
+            float: true,
+        });
+
+        // Command Palette Functionality (Simple Command Input)
+        const commandPalette = document.getElementById("command-palette");
+        commandPalette.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                alert(`Command Entered: ${commandPalette.value}`);
+                commandPalette.value = '';  // Reset input after command
+            }
         });
     </script>
 
