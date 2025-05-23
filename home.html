@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solon Dashboard</title>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
+
+    <!-- GridStack CSS (for draggable, resizable grids) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Main Container -->
     <div class="container">
-
-        <!-- Sidebar Navigation -->
+        <!-- Sidebar for Navigation -->
         <aside class="sidebar">
             <div class="logo">
                 <h2>Solon</h2>
@@ -28,7 +33,7 @@
             </ul>
         </aside>
 
-        <!-- Main Content Area -->
+        <!-- Main Content (Resizable Panels) -->
         <main class="main-content">
             <!-- Top Header -->
             <header class="header">
@@ -40,22 +45,67 @@
                 </div>
             </header>
 
-            <!-- Dashboard Content -->
-            <section class="dashboard">
-                <div class="card">
-                    <h3>Pending Transactions</h3>
-                    <p>3 pending transactions</p>
-                    <button>View</button>
+            <!-- GridStack (Draggable/Resizable Panels) -->
+            <div class="grid-stack" id="grid-stack">
+                <!-- Pending Transactions Panel -->
+                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                    <div class="grid-stack-item-content">
+                        <h3>Pending Transactions</h3>
+                        <p>3 pending transactions</p>
+                        <button>View</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Completed Transactions</h3>
-                    <p>12 completed transactions</p>
-                    <button>View</button>
-                </div>
-            </section>
-        </main>
 
+                <!-- Completed Transactions Panel -->
+                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                    <div class="grid-stack-item-content">
+                        <h3>Completed Transactions</h3>
+                        <p>12 completed transactions</p>
+                        <button>View</button>
+                    </div>
+                </div>
+
+                <!-- Documents Panel -->
+                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                    <div class="grid-stack-item-content">
+                        <h3>Documents</h3>
+                        <p>Upload and manage documents</p>
+                        <button>View</button>
+                    </div>
+                </div>
+
+                <!-- User Notifications Panel -->
+                <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
+                    <div class="grid-stack-item-content">
+                        <h3>Notifications</h3>
+                        <p>You have 2 new notifications</p>
+                        <button>View</button>
+                    </div>
+                </div>
+
+                <!-- Recent Activity Panel -->
+                <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
+                    <div class="grid-stack-item-content">
+                        <h3>Recent Activity</h3>
+                        <p>Last login: 5 mins ago</p>
+                        <button>View</button>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+
+    <!-- GridStack JS (for draggable, resizable grids) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.all.js"></script>
+
+    <script>
+        // Initialize GridStack.js to enable dragging and resizing
+        const grid = GridStack.init({
+            staticGrid: false,  // Allow resizing and dragging
+            animate: true,
+            float: true,  // Allow floating widgets that can be dragged anywhere
+        });
+    </script>
 
 </body>
 
