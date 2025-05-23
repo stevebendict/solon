@@ -1,6 +1,6 @@
 /* General Body and Container Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0a0a0a;
@@ -14,58 +14,58 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px; /* Adjust max width for better sizing */
 }
 
 .left-section {
     flex: 1;
-    padding: 50px;
+    padding: 30px;
     text-align: left;
 }
 
 .left-section h1 {
-    font-size: 60px;
+    font-size: 48px; /* Smaller font size for header */
     font-weight: 700;
 }
 
 .left-section h2 {
-    font-size: 45px;
+    font-size: 36px; /* Smaller font size for subheading */
     font-weight: 400;
     margin-top: -10px;
 }
 
 .left-section p {
-    font-size: 16px;
+    font-size: 14px; /* Reduced text size */
     margin-top: 20px;
 }
 
 .right-section {
     flex: 1;
     background-color: #1b1b1b;
-    padding: 50px;
+    padding: 40px;
     text-align: center;
     border-radius: 8px;
 }
 
 .right-section h3 {
-    font-size: 30px;
+    font-size: 24px; /* Smaller text size */
     font-weight: 500;
     margin-bottom: 20px;
 }
 
 .right-section p {
-    font-size: 16px;
+    font-size: 14px; /* Smaller text size */
     margin-bottom: 30px;
 }
 
 input {
     width: 80%;
-    padding: 15px;
+    padding: 12px; /* Smaller padding for input fields */
     margin-bottom: 15px;
     background-color: #333;
     border: 1px solid #666;
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Smaller font size */
     border-radius: 5px;
 }
 
@@ -76,11 +76,11 @@ input:focus {
 
 button {
     width: 80%;
-    padding: 15px;
+    padding: 12px; /* Reduced padding for button */
     background-color: #0056b3;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px; /* Smaller font size */
     border-radius: 5px;
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ button:hover {
 
 .demo-request {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px; /* Smaller font for demo text */
 }
 
 .demo-request a {
