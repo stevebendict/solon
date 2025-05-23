@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solon Dashboard</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- GridStack CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="container">
-        <!-- Sidebar Navigation -->
+        <!-- Left Sidebar (Explorer) -->
         <aside class="sidebar">
             <div class="logo">
                 <h2>Solon</h2>
@@ -33,90 +36,125 @@
             </ul>
         </aside>
 
-        <!-- Main Console (Resizable Panels) -->
+        <!-- Main Console Area -->
         <main class="main-content">
-            <!-- Header -->
+            <!-- Top Header -->
             <header class="header">
                 <div class="header-left">
                     <span>Welcome, User</span>
                 </div>
                 <div class="header-right">
-                    <button class="header-btn">Logout</button>
+                    <button class="header-btn" onclick="logout()">Logout</button>
                 </div>
             </header>
 
-            <!-- Command Palette (Terminal-like Search Bar) -->
+            <!-- Command Palette (Terminal-like search bar) -->
             <input type="text" id="command-palette" class="command-palette" placeholder="Type a command..." />
 
-            <!-- GridStack (Panels for User Interaction) -->
-            <div class="grid-stack" id="grid-stack">
-                <!-- Panel 1: Pending Transactions -->
-                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                    <div class="grid-stack-item-content">
-                        <h3>Pending Transactions</h3>
-                        <p>3 pending transactions</p>
-                        <button>View</button>
+            <!-- Main Work Area -->
+            <section class="work-area">
+                <div class="grid-stack" id="grid-stack">
+                    <!-- Pending Transactions Panel -->
+                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                            <h3>Pending Transactions</h3>
+                            <p>3 pending transactions</p>
+                            <button onclick="viewTransactions()">View</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Panel 2: Completed Transactions -->
-                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                    <div class="grid-stack-item-content">
-                        <h3>Completed Transactions</h3>
-                        <p>12 completed transactions</p>
-                        <button>View</button>
+                    <!-- Completed Transactions Panel -->
+                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                            <h3>Completed Transactions</h3>
+                            <p>12 completed transactions</p>
+                            <button onclick="viewCompleted()">View</button>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Panel 3: Document Management -->
-                <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
-                    <div class="grid-stack-item-content">
-                        <h3>Documents</h3>
-                        <p>Upload and manage documents</p>
-                        <button>View</button>
+                    <!-- Documents Panel -->
+                    <div class="grid-stack-item" data-gs-width="4" data-gs-height="3">
+                        <div class="grid-stack-item-content">
+                            <h3>Documents</h3>
+                            <p>Manage your documents here</p>
+                            <button onclick="uploadDocument()">Upload</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Panel 4: Notifications -->
-                <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
-                    <div class="grid-stack-item-content">
-                        <h3>Notifications</h3>
-                        <p>You have 2 new notifications</p>
-                        <button>View</button>
-                    </div>
-                </div>
-
-                <!-- Panel 5: Recent Activity -->
-                <div class="grid-stack-item" data-gs-width="3" data-gs-height="2">
-                    <div class="grid-stack-item-content">
-                        <h3>Recent Activity</h3>
-                        <p>Last login: 5 mins ago</p>
-                        <button>View</button>
-                    </div>
-                </div>
-            </div>
+            </section>
         </main>
+    </div>
+
+    <!-- Terminal Pane -->
+    <div class="terminal-pane">
+        <div class="terminal-header">
+            <span>Terminal</span>
+        </div>
+        <textarea id="terminal" placeholder="Type commands here..."></textarea>
     </div>
 
     <!-- GridStack JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack/4.4.0/gridstack.all.js"></script>
 
     <script>
-        // Initialize GridStack.js to enable dragging and resizing
+        // Initialize GridStack for draggable and resizable functionality
         const grid = GridStack.init({
-            staticGrid: false,  // Allow resizing and dragging
-            animate: true,
+            staticGrid: false, 
+            animate: true, 
             float: true,
         });
 
-        // Command Palette Functionality (Simple Command Input)
+        // Function to handle user logout
+        function logout() {
+            alert('Logging out...');
+            // Implement logout logic here, such as redirecting to a login page
+        }
+
+        // Function to view pending transactions
+        function viewTransactions() {
+            alert('Redirecting to Pending Transactions...');
+            // Add functionality to view pending transactions here
+        }
+
+        // Function to view completed transactions
+        function viewCompleted() {
+            alert('Redirecting to Completed Transactions...');
+            // Add functionality to view completed transactions here
+        }
+
+        // Function to handle document upload
+        function uploadDocument() {
+            alert('Document Upload Page');
+            // Implement document upload functionality here
+        }
+
+        // Command Palette functionality for terminal-like commands
         const commandPalette = document.getElementById("command-palette");
         commandPalette.addEventListener("keypress", function (event) {
             if (event.key === "Enter") {
-                alert(`Command Entered: ${commandPalette.value}`);
+                let command = commandPalette.value.trim().toLowerCase();
+                executeCommand(command);
                 commandPalette.value = '';  // Reset input after command
             }
         });
+
+        // Execute commands from command palette
+        function executeCommand(command) {
+            switch(command) {
+                case "view transactions":
+                    viewTransactions();
+                    break;
+                case "view completed":
+                    viewCompleted();
+                    break;
+                case "upload document":
+                    uploadDocument();
+                    break;
+                default:
+                    alert("Unknown command: " + command);
+                    break;
+            }
+        }
     </script>
 
 </body>
