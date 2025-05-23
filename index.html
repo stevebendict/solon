@@ -4,97 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solon Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0A0A0A;
-            color: white;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .login-container {
-            background-color: #1B1B1B;
-            padding: 40px;
-            border-radius: 8px;
-            width: 400px;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 30px;
-        }
-
-        .login-btn {
-            background-color: #0056b3;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .login-btn:hover {
-            background-color: #003366;
-        }
-
-        .login-form input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            background-color: #333;
-            color: white;
-        }
-
-        .login-form input:focus {
-            outline: none;
-            border-color: #0056b3;
-        }
-
-        .login-form a {
-            color: #66b3ff;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .login-form a:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 14px;
-            color: #ccc;
-        }
-    </style>
+    <title>Solon Terminal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Solon</h1>
+            <h2>Terminal</h2>
+            <p>Access the Solon Terminal wherever you are.</p>
+            <p>Legal professionals and notaries need seamless access to legal data, document signing, and compliance tracking. Solon keeps you connected and in control of your transactions, anywhere, anytime.</p>
+        </div>
 
-    <div class="login-container">
-        <h1>Solon</h1>
-        <h2>Login to Your Dashboard</h2>
-
-        <form class="login-form" action="home.html" method="get">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button class="login-btn" type="submit">Log In</button>
-        </form>
-
-        <div class="footer">
-            <p>Not a user? <a href="#">Request a demo</a></p>
+        <div class="right-section">
+            <h3>Log into your Solon Terminal</h3>
+            <p>You will need your account credentials to log in.</p>
+            <form action="home.html" method="get">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="demo-request">
+                <p>Not a Terminal user? <a href="#">Request a demo</a></p>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
