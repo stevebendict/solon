@@ -1,104 +1,248 @@
-/* General Body and Container Styling */
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0a0a0a;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #222;
 }
-
+a {
+  text-decoration: none;
+  color: #0071e3;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Container */
 .container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px; /* Adjust max width for better sizing */
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 0;
 }
-
-.left-section {
-    flex: 1;
-    padding: 30px;
-    text-align: left;
+/* Hero Section */
+header.hero {
+  background-color: #f5f7fa;
+  padding: 4rem 1rem 6rem;
+  text-align: center;
+  position: relative;
 }
-
-.left-section h1 {
-    font-size: 48px; /* Smaller font size for header */
-    font-weight: 700;
+header.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
 }
-
-.left-section h2 {
-    font-size: 36px; /* Smaller font size for subheading */
-    font-weight: 400;
-    margin-top: -10px;
+header.hero p.brand-statement {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #444;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.left-section p {
-    font-size: 14px; /* Reduced text size */
-    margin-top: 20px;
+header.hero p.subheadline {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  color: #555;
 }
-
-.right-section {
-    flex: 1;
-    background-color: #1b1b1b;
-    padding: 40px;
-    text-align: center;
-    border-radius: 8px;
+header.hero .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
-
-.right-section h3 {
-    font-size: 24px; /* Smaller text size */
-    font-weight: 500;
-    margin-bottom: 20px;
+header.hero button {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-.right-section p {
-    font-size: 14px; /* Smaller text size */
-    margin-bottom: 30px;
+header.hero button.secondary {
+  background-color: transparent;
+  border: 2px solid #0071e3;
+  color: #0071e3;
 }
-
-input {
-    width: 80%;
-    padding: 12px; /* Smaller padding for input fields */
-    margin-bottom: 15px;
-    background-color: #333;
-    border: 1px solid #666;
-    color: white;
-    font-size: 14px; /* Smaller font size */
-    border-radius: 5px;
+header.hero button:hover {
+  background-color: #005bb5;
 }
-
-input:focus {
-    outline: none;
-    border-color: #66b3ff;
+header.hero button.secondary:hover {
+  background-color: #0071e3;
+  color: white;
 }
-
-button {
-    width: 80%;
-    padding: 12px; /* Reduced padding for button */
-    background-color: #0056b3;
-    border: none;
-    color: white;
-    font-size: 16px; /* Smaller font size */
-    border-radius: 5px;
-    cursor: pointer;
+/* Video Hero */
+.hero-video {
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
-
-button:hover {
-    background-color: #003366;
+.hero-video video {
+  width: 100%;
+  display: block;
 }
-
-.demo-request {
-    margin-top: 20px;
-    font-size: 12px; /* Smaller font for demo text */
+/* Section Titles */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111;
 }
-
-.demo-request a {
-    color: #66b3ff;
-    text-decoration: none;
+section p.lead {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
-
-.demo-request a:hover {
-    text-decoration: underline;
+/* Onboarding Section */
+.onboarding {
+  background-color: #f9fafc;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+  text-align: center;
 }
+.onboarding .pricing-preview {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+.onboarding .btn-contact {
+  margin-top: 2rem;
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.8rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.onboarding .btn-contact:hover {
+  background-color: #005bb5;
+}
+/* Paket Section */
+.packages {
+  margin-bottom: 5rem;
+}
+.package-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.package-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: box-shadow 0.3s ease;
+}
+.package-card:hover {
+  box-shadow: 0 6px 30px rgba(0,0,0,0.15);
+}
+.package-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0071e3;
+}
+.package-card ul {
+  list-style: none;
+  margin-bottom: 1.8rem;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+.package-card ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.1rem;
+  position: relative;
+}
+.package-card ul li::before {
+  content: '✔';
+  color: #0071e3;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+.package-card .price {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+.package-card button {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.package-card button:hover {
+  background-color: #005bb5;
+}
+/* Keunggulan Section */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+.feature-item {
+  background: #f9fafc;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+.feature-item:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0071e3;
+}
+.feature-item h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+.feature-item p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.4;
+}
+/* Testimoni Section */
+.testimonials {
+  background-color: #f5f7fa;
+  padding: 4rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 5rem;
+  max-width: 900px;
