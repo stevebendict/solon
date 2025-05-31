@@ -4,56 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Solon - Solusi Cloud Terpadu untuk Notaris & PPAT Indonesia</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Hero Section -->
   <header class="hero">
-    <div class="container">
-      <h1>Solon – Solusi Cloud Terpadu untuk Notaris &amp; PPAT Indonesia</h1>
-      <p class="brand-statement">Mentransformasi cara kerja notaris dan PPAT Indonesia dengan teknologi yang cerdas dan mudah diakses. Solon hadir bukan hanya sebagai alat, tapi sebagai mitra terpercaya dalam mengelola setiap proses penting di kantor Anda.</p>
-      <p class="subheadline">Permudah manajemen dokumen, keuangan, dan operasional kantor Anda dengan platform modular berbasis cloud yang lengkap dan mudah digunakan.</p>
-      <div class="btn-group">
-        <button onclick="alert('Fitur Mulai Sekarang sedang dalam pengembangan')">Mulai Sekarang</button>
-        <button class="secondary" onclick="alert('Fitur Minta Demo Gratis sedang dalam pengembangan')">Minta Demo Gratis</button>
+    <div class="hero-content">
+      <h1>Solon</h1>
+      <p class="tagline">Solusi Cloud Terpadu untuk Notaris & PPAT Indonesia</p>
+      <p class="description">
+        Mentransformasi cara kerja notaris dan PPAT Indonesia dengan teknologi cerdas dan mudah diakses. 
+        Solon hadir sebagai mitra terpercaya dalam mengelola setiap proses penting di kantor Anda.
+      </p>
+      <div class="buttons">
+        <a href="#paket" class="btn-primary">Mulai Sekarang</a>
+        <a href="#kontak" class="btn-secondary">Minta Demo Gratis</a>
       </div>
-      <div class="hero-video" style="margin-top:40px;">
-        <!-- Placeholder video, ganti dengan video asli -->
-        <video autoplay muted loop playsinline>
-          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
-          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
-          Video tidak didukung oleh browser Anda.
-        </video>
-      </div>
+    </div>
+    <div class="hero-video">
+      <!-- Ganti link video ini sesuai kebutuhan -->
+      <video autoplay muted loop playsinline>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+        Video tidak didukung browser Anda.
+      </video>
     </div>
   </header>
 
-  <main class="container">
-
-    <!-- Onboarding & Pricing -->
-    <section class="onboarding">
+  <main>
+    <section id="onboarding" class="section onboarding">
       <h2>Mudah Memulai, Tanpa Ribet</h2>
-      <p>Kami membantu migrasi data lama Anda dengan onboarding profesional, sehingga Anda langsung bisa menggunakan Solon tanpa kehilangan data penting. Mulai dengan biaya onboarding sekali, lalu nikmati layanan berlangganan bulanan atau tahunan sesuai kebutuhan Anda.</p>
-      <div class="pricing-preview">
-        <p>Biaya onboarding: mulai dari <strong>Rp 3.000.000</strong></p>
-        <p>Berlangganan: mulai <strong>Rp 500.000/bulan</strong> (paket dasar)</p>
+      <p>Kami bantu migrasi data lama Anda dengan onboarding profesional agar Anda bisa langsung menggunakan Solon tanpa kehilangan data penting. Biaya onboarding sekali, lalu layanan berlangganan bulanan atau tahunan sesuai kebutuhan.</p>
+      <div class="pricing">
+        <div class="price-item">
+          <h3>Biaya Onboarding</h3>
+          <p>Mulai dari <strong>Rp 3.000.000</strong></p>
+        </div>
+        <div class="price-item">
+          <h3>Berlangganan</h3>
+          <p>Mulai <strong>Rp 500.000/bulan</strong> (paket dasar)</p>
+        </div>
       </div>
-      <button class="btn-contact" onclick="alert('Hubungi Tim Kami - fitur kontak sedang dikembangkan')">Hubungi Tim Kami</button>
+      <a href="#kontak" class="btn-primary">Hubungi Tim Kami</a>
     </section>
 
-    <!-- Narasi Brand -->
-    <section class="brand-narrative">
+    <section id="brand" class="section brand-narrative">
       <h2>Membangun Masa Depan Profesi Notaris dan PPAT dengan Solusi Digital Terpadu</h2>
-      <p class="lead">Di tengah dinamika dunia hukum dan bisnis yang terus berkembang, profesional notaris dan PPAT membutuhkan lebih dari sekadar sistem — mereka membutuhkan solusi yang paham akan kompleksitas pekerjaan, yang menghadirkan kecepatan, akurasi, dan keamanan data. Solon dirancang khusus untuk menjawab tantangan ini, memberdayakan Anda untuk fokus pada yang paling penting: memberikan layanan terbaik bagi klien Anda.</p>
+      <p>
+        Di tengah dunia hukum dan bisnis yang terus berkembang, profesional notaris dan PPAT membutuhkan solusi yang paham kompleksitas pekerjaan, menghadirkan kecepatan, akurasi, dan keamanan data.
+        Solon dirancang untuk membantu Anda fokus pada hal terpenting: memberikan layanan terbaik kepada klien.
+      </p>
     </section>
 
-    <!-- Paket & Fitur -->
-    <section class="packages">
+    <section id="paket" class="section packages">
       <h2>Pilih Paket yang Sesuai dengan Kebutuhan Anda</h2>
-      <p class="lead">Solon hadir dengan paket yang bisa disesuaikan, mulai dari kebutuhan dasar hingga lengkap dengan semua modul untuk kelola kantor Anda.</p>
+      <p>Solon hadir dengan paket yang bisa disesuaikan, mulai dari kebutuhan dasar hingga lengkap untuk mengelola kantor Anda.</p>
       <div class="package-cards">
-
         <article class="package-card">
           <h3>Starter</h3>
           <ul>
@@ -63,7 +67,7 @@
             <li>Penyimpanan Cloud dasar</li>
           </ul>
           <p class="price">Rp 500.000/bulan</p>
-          <button onclick="alert('Paket Starter - fitur pemesanan sedang dikembangkan')">Pilih Paket</button>
+          <a href="#kontak" class="btn-primary btn-small">Pilih Paket</a>
         </article>
 
         <article class="package-card">
@@ -75,7 +79,7 @@
             <li>Laporan Bulanan & Tahunan</li>
           </ul>
           <p class="price">Rp 1.200.000/bulan</p>
-          <button onclick="alert('Paket Profesional - fitur pemesanan sedang dikembangkan')">Pilih Paket</button>
+          <a href="#kontak" class="btn-primary btn-small">Pilih Paket</a>
         </article>
 
         <article class="package-card">
@@ -88,116 +92,85 @@
             <li>Kapasitas Penyimpanan Cloud lebih besar</li>
           </ul>
           <p class="price">Rp 2.500.000/bulan</p>
-          <button onclick="alert('Paket Enterprise - fitur pemesanan sedang dikembangkan')">Pilih Paket</button>
+          <a href="#kontak" class="btn-primary btn-small">Pilih Paket</a>
         </article>
-
       </div>
-      <p style="text-align:center; margin-top: 1.2rem;">Tambahan modul dan kapasitas penyimpanan bisa dibeli sebagai add-on sesuai kebutuhan.</p>
-      <div style="text-align:center; margin-top: 1.5rem;">
-        <a href="#" onclick="alert('Lihat Detail Paket - fitur dalam pengembangan')" style="color:#0071e3; font-weight:600; font-size:1.1rem;">Lihat Detail Paket</a> | 
-        <a href="#" onclick="alert('Konsultasi Paket - fitur dalam pengembangan')" style="color:#0071e3; font-weight:600; font-size:1.1rem;">Konsultasi Paket</a>
-      </div>
+      <p class="add-on-note">Modul dan kapasitas penyimpanan tambahan dapat dibeli sebagai add-on sesuai kebutuhan.</p>
     </section>
 
-    <!-- Keunggulan -->
-    <section class="features">
+    <section id="keunggulan" class="section features">
       <h2>Kenapa Solon? Ini Alasannya</h2>
-      <p class="lead">Solon bukan hanya sebuah software. Ini adalah komitmen kami untuk mendukung kemajuan dan profesionalisme notaris serta PPAT di seluruh Indonesia dengan teknologi yang selalu berkembang dan layanan yang tak tertandingi.</p>
+      <p>Solon bukan sekedar software. Ini komitmen untuk mendukung kemajuan dan profesionalisme notaris dan PPAT di Indonesia dengan teknologi dan layanan terbaik.</p>
       <div class="features-list">
-
-        <div class="feature-item" aria-label="Terintegrasi Lengkap">
-          <div class="feature-icon">🧩</div>
+        <div class="feature-item">
+          <span>🧩</span>
           <h4>Terintegrasi Lengkap</h4>
-          <p>Semua kebutuhan operasional kantor dalam satu platform.</p>
+          <p>Semua kebutuhan operasional dalam satu platform.</p>
         </div>
-
-        <div class="feature-item" aria-label="Modular dan Fleksibel">
-          <div class="feature-icon">🛠️</div>
+        <div class="feature-item">
+          <span>🛠️</span>
           <h4>Modular dan Fleksibel</h4>
-          <p>Pilih modul yang sesuai kebutuhan dan tambah kapan saja.</p>
+          <p>Tambah modul sesuai kebutuhan kapan saja.</p>
         </div>
-
-        <div class="feature-item" aria-label="Mudah Digunakan">
-          <div class="feature-icon">👍</div>
+        <div class="feature-item">
+          <span>👍</span>
           <h4>Mudah Digunakan</h4>
-          <p>Antarmuka ramah pengguna dengan dukungan onboarding penuh.</p>
+          <p>Antarmuka ramah pengguna dengan onboarding penuh.</p>
         </div>
-
-        <div class="feature-item" aria-label="Keamanan Terjamin">
-          <div class="feature-icon">🔒</div>
+        <div class="feature-item">
+          <span>🔒</span>
           <h4>Keamanan Terjamin</h4>
           <p>Data Anda tersimpan aman di cloud dengan proteksi terbaik.</p>
         </div>
-
-        <div class="feature-item" aria-label="Dukungan Lokal">
-          <div class="feature-icon">🤝</div>
+        <div class="feature-item">
+          <span>🤝</span>
           <h4>Dukungan Lokal</h4>
-          <p>Tim support siap membantu kapan saja dengan bahasa dan budaya Indonesia.</p>
+          <p>Tim support berbahasa Indonesia siap membantu Anda.</p>
         </div>
-
       </div>
     </section>
 
-    <!-- Testimoni -->
-    <section class="testimonials">
+    <section id="testimoni" class="section testimonials">
       <h2>Apa Kata Pengguna Kami</h2>
-      <div class="testimonial-item">
-        <p>"Solon sangat membantu kami dalam mengelola dokumen dan laporan bulanan. Proses migrasi datanya juga sangat mudah."</p>
-        <p class="testimonial-author">– Bapak Andi, Notaris Jakarta</p>
+      <div class="testimonial">
+        <p>"Solon sangat membantu kami mengelola dokumen dan laporan bulanan. Proses migrasi datanya mudah."</p>
+        <span>- Bapak Andi, Notaris Jakarta</span>
       </div>
-      <div class="testimonial-item">
+      <div class="testimonial">
         <p>"Dengan Solon, tim HR kami lebih efisien mengelola absensi dan payroll."</p>
-        <p class="testimonial-author">– Ibu Sari, PPAT Surabaya</p>
+        <span>- Ibu Sari, PPAT Surabaya</span>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="faq">
+    <section id="faq" class="section faq">
       <h2>Pertanyaan yang Sering Diajukan</h2>
-
-      <div class="faq-item">
-        <h3>Bagaimana proses migrasi data lama?</h3>
-        <p>Tim kami akan membantu proses migrasi data Anda secara aman dan cepat agar Anda dapat langsung menggunakan Solon tanpa kehilangan data penting.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Apakah bisa menambah modul di kemudian hari?</h3>
-        <p>Ya, Solon bersifat modular sehingga Anda dapat menambah modul sesuai kebutuhan kapan saja dengan mudah.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Apa metode pembayaran yang tersedia?</h3>
-        <p>Kami menerima pembayaran via transfer bank dan metode digital lainnya yang umum di Indonesia.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Bagaimana dukungan teknis dari Solon?</h3>
-        <p>Tim support kami siap membantu Anda melalui email, telepon, dan chat dalam bahasa Indonesia selama jam kerja.</p>
-      </div>
+      <details>
+        <summary>Bagaimana proses migrasi data lama?</summary>
+        <p>Tim kami akan membantu migrasi data Anda secara aman dan cepat agar Anda bisa langsung menggunakan Solon tanpa kehilangan data penting.</p>
+      </details>
+      <details>
+        <summary>Apakah bisa menambah modul di kemudian hari?</summary>
+        <p>Ya, Solon modular sehingga Anda dapat menambah modul kapan saja dengan mudah.</p>
+      </details>
+      <details>
+        <summary>Apa metode pembayaran yang tersedia?</summary>
+        <p>Kami menerima transfer bank dan metode digital yang umum di Indonesia.</p>
+      </details>
+      <details>
+        <summary>Bagaimana dukungan teknis dari Solon?</summary>
+        <p>Tim support kami siap membantu via email, telepon, dan chat selama jam kerja dengan bahasa Indonesia.</p>
+      </details>
     </section>
 
+    <section id="kontak" class="section cta-footer">
+      <h2>Siap Memulai dengan Solon?</h2>
+      <p>Bergabunglah bersama ratusan profesional yang telah mempercayakan kemudahan operasional kantor mereka kepada Solon.</p>
+      <a href="mailto:support@solon.co.id" class="btn-primary">Hubungi Kami Sekarang</a>
+    </section>
   </main>
-
-  <!-- CTA Penutup -->
-  <section class="cta-footer">
-    <h2>Siap Memulai dengan Solon?</h2>
-    <p>Bergabunglah bersama ratusan profesional yang telah mempercayakan kemudahan operasional kantor mereka kepada Solon. Karena setiap detik dan detail dalam pekerjaan Anda adalah hal yang sangat berharga.</p>
-    <button onclick="alert('Hubungi Kami - fitur kontak sedang dikembangkan')">Hubungi Kami Sekarang</button>
-  </section>
 
   <footer>
     &copy; 2025 Solon. Semua hak cipta dilindungi.
   </footer>
-
-  <script>
-    // Script untuk FAQ buka tutup
-    const faqItems = document.querySelectorAll('.faq-item h3');
-    faqItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        const parent = item.parentElement;
-        parent.classList.toggle('active');
-      });
-    });
-  </script>
 </body>
 </html>
