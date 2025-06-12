@@ -17,7 +17,18 @@ export default function SolonLandingPage() {
   }
 }, []);
 
+ const [form, setForm] = useState({ name: "", email: "", message: "" });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const generateWhatsAppLink = () => {
+    const base = "https://wa.me/6285736212190";
+    const text = `Halo, saya ${form.name} (${form.email}). Saya ingin mencoba demo SOLON.\n${form.message}`;
+    return `${base}?text=${encodeURIComponent(text)}`;
+  };
   
   return (
     <main className="font-sans text-gray-800">
@@ -249,18 +260,64 @@ export default function SolonLandingPage() {
       </section>
 
       {/* Lead Capture Section */}
-      <section className="py-20 px-4 bg-gray-100">
-        <h2 className="text-3xl font-bold text-center mb-8">Unduh Booklet Kami</h2>
-        <p className="text-center mb-6 max-w-xl mx-auto">Isi formulir di bawah ini untuk menerima booklet berisi fitur lengkap, manfaat, dan studi kasus dari penggunaan SOLON ERP.</p>
-        <form className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
-          <div className="grid grid-cols-1 gap-4">
-            <input type="text" placeholder="Nama Lengkap" className="border p-3 rounded" />
-            <input type="email" placeholder="Email" className="border p-3 rounded" />
-            <input type="text" placeholder="Profesi (Notaris / PPAT / dll)" className="border p-3 rounded" />
-            <input type="text" placeholder="Kota / Wilayah" className="border p-3 rounded" />
-            <button type="submit" className="bg-black text-white px-6 py-3 rounded-full mt-4">Kirim & Unduh Booklet</button>
+      <section
+        className="py-20 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
+      >
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* CTA Area */}
+          <div>
+            <h2 className="text-4xl font-bold text-white mb-4">Coba Solon Sekarang</h2>
+            <p className="text-lg text-white/90 mb-6">
+              SOLON ERP dirancang khusus untuk Notaris & PPAT. Dapatkan demo interaktif tanpa biaya sekarang.
+            </p>
           </div>
-        </form>
+
+          {/* Form Card */}
+          <div className="bg-white p-8 rounded-xl shadow-xl">
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">Coba Demo Sekarang</h3>
+            <form className="space-y-4">
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Nama Lengkap"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 text-black"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="Alamat Email"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 text-black"
+                required
+              />
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Ceritakan kebutuhan Anda (opsional)"
+                className="w-full px-4 py-3 rounded-lg bg-gray-100 text-black"
+                rows={4}
+              />
+              <div className="text-center">
+                <a
+                  href={generateWhatsAppLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 px-6 py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-900"
+                >
+                  Kirim via WhatsApp
+                </a>
+              </div>
+            </form>
+          </div>
+
+        </div>
       </section>
 
       {/* FAQ Section */}
