@@ -34,10 +34,10 @@ export default function SolonLandingPage() {
   {/* Text Content */}
   <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-4 sm:px-6">
   <div className="text-white w-full sm:max-w-xl space-y-6">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
         Sistem ERP Inklusif untuk Notaris & PPAT Modern
       </h1>
-      <p className="text-lg md:text-xl text-gray-300 mb-8">
+      <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-8">
         SOLON menyederhanakan pengelolaan dokumen hukum Anda, dengan teknologi terintegrasi dan automasi pintar.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
@@ -62,7 +62,7 @@ export default function SolonLandingPage() {
          {/* Features Section */}
       <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
           {/* Tile 1 */}
           <div className="bg-white p-6 flex flex-col justify-between mb-4">
             <div>
@@ -144,7 +144,9 @@ export default function SolonLandingPage() {
          {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto flex overflow-x-auto snap-x snap-mandatory space-x-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:space-x-0">
+
+
           {[
             {
               image: "/images/testimonials/client1.jpg",
@@ -175,7 +177,7 @@ export default function SolonLandingPage() {
               title: "Notaris & PPAT Tangerang"
             }
           ].map((testimonial, i) => (
-            <div key={i} className="relative rounded-xl overflow-hidden shadow-md">
+            <div key={i} className="relative rounded-xl overflow-hidden shadow-md min-w-[280px] snap-start md:min-w-0">
               <img src={testimonial.image} alt={`Client ${i + 1}`} className="w-full h-64 sm:h-80 object-cover" />
               <img src={testimonial.logo} alt="Company Logo" className="absolute top-4 left-4 h-6" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 text-sm">
@@ -194,11 +196,11 @@ export default function SolonLandingPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Paket Berlangganan</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="flex flex-row overflow-x-auto space-x-6 snap-x snap-mandatory px-1 md:grid md:grid-cols-3 md:gap-6 md:space-x-0">
 
 
             {/* Starter Plan */}
-            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col snap-start min-w-[280px] md:min-w-0">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Starter</h3>
               <p className="text-gray-500 mb-4">Cocok untuk notaris atau PPAT individual yang baru memulai digitalisasi.</p>
               <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 199rb</div>
@@ -214,7 +216,7 @@ export default function SolonLandingPage() {
             </div>
 
             {/* Pro/Enterprise Plan */}
-            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col border-2 border-black">
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col snap-start min-w-[280px] md:min-w-0 border-2 border-black">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Enterprise</h3>
               <p className="text-gray-500 mb-4">Solusi lengkap untuk kantor PPAT/Notaris berkapasitas tinggi & tim besar.</p>
               <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 799rb</div>
@@ -230,7 +232,7 @@ export default function SolonLandingPage() {
              </div>
 
             {/* Custom Plan */}
-            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col snap-start min-w-[280px] md:min-w-0">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Custom</h3>
               <p className="text-gray-500 mb-4">Untuk instansi hukum atau B2B dengan kebutuhan kustomisasi khusus.</p>
               <div className="text-2xl sm:text-3xl font-bold mb-2">Hubungi Kami</div>
@@ -253,10 +255,11 @@ export default function SolonLandingPage() {
         className="py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
       >
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-10 items-center">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-10 items-center">
+
 
           {/* CTA Area */}
-          <div className="text-white">
+          <div className="text-white order-1 md:order-2">
             <h2 className="text-4xl font-bold mb-4">Coba Solon Sekarang</h2>
             <p className="text-lg text-white/90 mb-6">
               SOLON ERP dirancang khusus untuk Notaris & PPAT. Dapatkan demo interaktif tanpa biaya sekarang.
@@ -264,7 +267,7 @@ export default function SolonLandingPage() {
           </div>
 
           {/* Form Card */}
-          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full md:max-w-md">
+         <div className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full md:max-w-md order-2 md:order-1">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Coba Demo Sekarang</h3>
             <form className="space-y-4">
               <input
