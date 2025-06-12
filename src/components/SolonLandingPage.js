@@ -2,12 +2,21 @@ import React, { useEffect } from "react";
 
 
 export default function SolonLandingPage() {
-   useEffect(() => {
+  useEffect(() => {
+  const twitterEmbedExists = document.querySelector("script[src='https://platform.twitter.com/widgets.js']");
+  if (!twitterEmbedExists) {
     const script = document.createElement("script");
     script.setAttribute("src", "https://platform.twitter.com/widgets.js");
     script.setAttribute("async", "true");
+    script.setAttribute("charset", "utf-8");
     document.body.appendChild(script);
-  }, []);
+  } else {
+    if (window.twttr && window.twttr.widgets) {
+      window.twttr.widgets.load();
+    }
+  }
+}, []);
+
 
   return (
     <main className="font-sans text-gray-800">
