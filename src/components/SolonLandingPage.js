@@ -59,24 +59,43 @@ export default function SolonLandingPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-gray-50">
-        <h2 className="text-3xl font-bold text-center mb-2">Mengapa Notaris & PPAT Memilih SOLON?</h2>
-        <p className="text-center text-sm text-gray-500 mb-8">Dipercaya oleh praktisi hukum modern di seluruh Indonesia</p>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden relative">
-              <img src={`/images/testimoni-placeholder${index}.jpg`} alt={`Client ${index}`} className="w-full h-60 object-cover" />
-              <div className="p-4">
-                <p className="text-sm italic mb-2">
-                  “Testimoni dari klien placeholder. Nanti diganti dengan teks dari gambar ekspor Anda.”
-                </p>
-                <p className="text-sm font-semibold">Nama Klien, Posisi - Kota</p>
-              </div>
-              <div className="absolute top-4 left-4 bg-white px-2 py-1 text-xs font-semibold rounded">Logo Perusahaan</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="py-20 px-4 bg-white">
+  <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {/* Testimonial 1 */}
+    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
+      <img src="/images/testimonials/client1.jpg" alt="Client 1" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
+      <p className="text-gray-700 text-sm mb-3 italic">"SOLON ERP membantu kami mengelola dokumen notaris secara efisien. Praktis dan sangat intuitif."</p>
+      <p className="font-semibold text-sm">Andi Santoso</p>
+      <p className="text-xs text-gray-500">PPAT Jakarta Selatan</p>
+    </div>
+
+    {/* Testimonial 2 */}
+    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
+      <img src="/images/testimonials/client2.jpg" alt="Client 2" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
+      <p className="text-gray-700 text-sm mb-3 italic">"Dengan SOLON, pengurusan dokumen jadi transparan dan cepat. Klien saya sangat puas."</p>
+      <p className="font-semibold text-sm">Sari Wulandari</p>
+      <p className="text-xs text-gray-500">Notaris Bandung</p>
+    </div>
+
+    {/* Testimonial 3 */}
+    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
+      <img src="/images/testimonials/client3.jpg" alt="Client 3" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
+      <p className="text-gray-700 text-sm mb-3 italic">"Antarmuka yang sederhana tapi powerful. Fitur e-signature-nya top."</p>
+      <p className="font-semibold text-sm">Taufik Hidayat</p>
+      <p className="text-xs text-gray-500">PPAT Surabaya</p>
+    </div>
+
+    {/* Testimonial 4 */}
+    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
+      <img src="/images/testimonials/client4.jpg" alt="Client 4" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
+      <p className="text-gray-700 text-sm mb-3 italic">"SOLON menyederhanakan pekerjaan kami. Sangat membantu dalam audit internal dan eksternal."</p>
+      <p className="font-semibold text-sm">Nina Kusuma</p>
+      <p className="text-xs text-gray-500">Notaris & PPAT Tangerang</p>
+    </div>
+  </div>
+</section>
+
 
       {/* Pricing Section */}
       <section className="py-20 px-4 bg-white">
