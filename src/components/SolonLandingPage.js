@@ -119,8 +119,6 @@ export default function SolonLandingPage() {
             <p className="text-sm text-gray-600">Customize replication settings and dedicated nodes, for maximum resilience under peak loads.</p>
           </div>
         </div>
-      </section>div>
-        </div>
       </section>
 
 
