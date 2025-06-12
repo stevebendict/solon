@@ -94,12 +94,7 @@ export default function SolonLandingPage() {
           ].map((testimonial, i) => (
             <div key={i} className="relative rounded-xl overflow-hidden shadow-md">
               <img src={testimonial.image} alt={`Client ${i + 1}`} className="w-full h-80 object-cover" />
-              <img src={testimonial.logo} alt="Company Logo" className="absolute top-4 right-4 h-6" />
-              <div className="absolute top-4 left-4 bg-white rounded-full p-2">
-                <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M6 4l12 6-12 6V4z" />
-                </svg>
-              </div>
+              <img src={testimonial.logo} alt="Company Logo" className="absolute top-4 left-4 h-6" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 text-sm">
                 <p className="italic mb-2">"{testimonial.quote}"</p>
                 <p className="font-semibold">{testimonial.name}</p>
