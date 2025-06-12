@@ -32,9 +32,9 @@ export default function SolonLandingPage() {
   <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
 
   {/* Text Content */}
-  <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-6">
+  <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-4 sm:px-6">
     <div className="text-white max-w-xl">
-      <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
         Sistem ERP Inklusif untuk Notaris & PPAT Modern
       </h1>
       <p className="text-lg md:text-xl text-gray-300 mb-8">
@@ -198,7 +198,7 @@ export default function SolonLandingPage() {
 
             {/* Starter Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Starter</h3>
+              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Starter</h3>
               <p className="text-gray-500 mb-4">Cocok untuk notaris atau PPAT individual yang baru memulai digitalisasi.</p>
               <div className="text-3xl font-bold mb-2">IDR 199rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
@@ -213,7 +213,7 @@ export default function SolonLandingPage() {
 
             {/* Pro/Enterprise Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col border-2 border-black">
-              <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
+              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Enterprise</h3>
               <p className="text-gray-500 mb-4">Solusi lengkap untuk kantor PPAT/Notaris berkapasitas tinggi & tim besar.</p>
               <div className="text-3xl font-bold mb-2">IDR 799rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
@@ -228,7 +228,7 @@ export default function SolonLandingPage() {
 
             {/* Custom Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Custom</h3>
+              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Custom</h3>
               <p className="text-gray-500 mb-4">Untuk instansi hukum atau B2B dengan kebutuhan kustomisasi khusus.</p>
               <div className="text-3xl font-bold mb-2">Hubungi Kami</div>
               <p className="text-sm text-gray-400 mb-6">Paket fleksibel sesuai kebutuhan</p>
@@ -250,7 +250,7 @@ export default function SolonLandingPage() {
         className="py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
       >
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-10 items-center">
 
           {/* CTA Area */}
           <div className="text-white">
@@ -261,7 +261,7 @@ export default function SolonLandingPage() {
           </div>
 
           {/* Form Card */}
-          <div className="bg-white p-8 rounded-xl shadow-xl w-full md:max-w-md">
+          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full md:max-w-md">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Coba Demo Sekarang</h3>
             <form className="space-y-4">
               <input
