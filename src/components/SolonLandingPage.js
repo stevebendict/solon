@@ -1,6 +1,13 @@
 import React from "react";
 
 export default function SolonLandingPage() {
+   useEffect(() => {
+    const script = document.createElement("script");
+    script.setAttribute("src", "https://platform.twitter.com/widgets.js");
+    script.setAttribute("async", "true");
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <main className="font-sans text-gray-800">
 
@@ -124,6 +131,21 @@ export default function SolonLandingPage() {
             <h3 className="font-semibold text-xl">Bagaimana cara berlangganan?</h3>
             <p>Anda bisa mulai dari formulir di atas atau menghubungi kami lewat WhatsApp.</p>
           </div>
+        </div>
+      </section>
+
+          {/* Twitter Feed Section */}
+        <section className="py-20 px-4 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-6">Dari X / Twitter Kami</h2>
+        <div className="max-w-3xl mx-auto text-center">
+          <a
+            className="twitter-timeline"
+            data-theme="light"
+            data-tweet-limit="5"
+            href="https://x.com/PalantirTech"
+          >
+            Tweets by @SolonTech
+          </a>
         </div>
       </section>
 
