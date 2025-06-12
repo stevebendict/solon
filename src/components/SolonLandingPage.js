@@ -33,14 +33,14 @@ export default function SolonLandingPage() {
 
   {/* Text Content */}
   <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-4 sm:px-6">
-    <div className="text-white max-w-xl">
+  <div className="text-white w-full sm:max-w-xl space-y-6">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
         Sistem ERP Inklusif untuk Notaris & PPAT Modern
       </h1>
       <p className="text-lg md:text-xl text-gray-300 mb-8">
         SOLON menyederhanakan pengelolaan dokumen hukum Anda, dengan teknologi terintegrasi dan automasi pintar.
       </p>
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
         <a
           href="#download"
           className="bg-white text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
