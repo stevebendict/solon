@@ -320,28 +320,25 @@ export default function SolonLandingPage() {
       </section>
 
 
-      {/* FAQ Section */}
-      <section className="py-20 px-4 bg-white">
-        <h2 className="text-3xl font-bold text-center mb-12">Pertanyaan yang Sering Diajukan</h2>
-        <div className="max-w-4xl mx-auto space-y-6">
-          <div>
-            <h3 className="font-semibold text-xl">Apakah SOLON ERP aman digunakan?</h3>
-            <p>Ya. Data Anda dilindungi dengan enkripsi dan penyimpanan cloud yang aman.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl">Apakah harus instal software?</h3>
-            <p>Tidak. SOLON ERP berbasis web dan bisa diakses dari browser.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl">Bisakah digunakan di HP?</h3>
-            <p>Ya, antarmuka SOLON ERP responsif dan mendukung perangkat mobile.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-xl">Bagaimana cara berlangganan?</h3>
-            <p>Anda bisa mulai dari formulir di atas atau menghubungi kami lewat WhatsApp.</p>
-          </div>
+    {/* CTA to WhatsApp Section (FAQ Replacement) */}
+      <section className="py-20 bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4">
+          <a
+            href="https://wa.me/6285736212190"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex flex-col md:flex-row items-center justify-between gap-6 bg-black rounded-xl px-10 py-12 text-white hover:bg-gray-800 transition"
+          >
+            <div className="text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-semibold">
+                Punya pertanyaan lain seputar Solon? Tim support kami siap membantu.
+              </h3>
+            </div>
+            <div className="text-4xl">➜</div>
+          </a>
         </div>
       </section>
+
 
           {/* Twitter Feed Section */}
         <section className="py-20 px-4 bg-gray-50">
