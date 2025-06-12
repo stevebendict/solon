@@ -58,43 +58,57 @@ export default function SolonLandingPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+         {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
-  <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {/* Testimonial 1 */}
-    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
-      <img src="/images/testimonials/client1.jpg" alt="Client 1" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
-      <p className="text-gray-700 text-sm mb-3 italic">"SOLON ERP membantu kami mengelola dokumen notaris secara efisien. Praktis dan sangat intuitif."</p>
-      <p className="font-semibold text-sm">Andi Santoso</p>
-      <p className="text-xs text-gray-500">PPAT Jakarta Selatan</p>
-    </div>
-
-    {/* Testimonial 2 */}
-    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
-      <img src="/images/testimonials/client2.jpg" alt="Client 2" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
-      <p className="text-gray-700 text-sm mb-3 italic">"Dengan SOLON, pengurusan dokumen jadi transparan dan cepat. Klien saya sangat puas."</p>
-      <p className="font-semibold text-sm">Sari Wulandari</p>
-      <p className="text-xs text-gray-500">Notaris Bandung</p>
-    </div>
-
-    {/* Testimonial 3 */}
-    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
-      <img src="/images/testimonials/client3.jpg" alt="Client 3" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
-      <p className="text-gray-700 text-sm mb-3 italic">"Antarmuka yang sederhana tapi powerful. Fitur e-signature-nya top."</p>
-      <p className="font-semibold text-sm">Taufik Hidayat</p>
-      <p className="text-xs text-gray-500">PPAT Surabaya</p>
-    </div>
-
-    {/* Testimonial 4 */}
-    <div className="bg-gray-50 p-6 rounded-2xl shadow text-center">
-      <img src="/images/testimonials/client4.jpg" alt="Client 4" className="w-20 h-20 mx-auto rounded-full mb-4 object-cover" />
-      <p className="text-gray-700 text-sm mb-3 italic">"SOLON menyederhanakan pekerjaan kami. Sangat membantu dalam audit internal dan eksternal."</p>
-      <p className="font-semibold text-sm">Nina Kusuma</p>
-      <p className="text-xs text-gray-500">Notaris & PPAT Tangerang</p>
-    </div>
-  </div>
-</section>
+        <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            {
+              image: "/images/testimonials/client1.jpg",
+              logo: "/images/testimonials/logo1.png",
+              quote: "SOLON ERP membantu kami mengelola dokumen notaris secara efisien. Praktis dan sangat intuitif.",
+              name: "Andi Santoso",
+              title: "PPAT Jakarta Selatan"
+            },
+            {
+              image: "/images/testimonials/client2.jpg",
+              logo: "/images/testimonials/logo2.png",
+              quote: "Dengan SOLON, pengurusan dokumen jadi transparan dan cepat. Klien saya sangat puas.",
+              name: "Sari Wulandari",
+              title: "Notaris Bandung"
+            },
+            {
+              image: "/images/testimonials/client3.jpg",
+              logo: "/images/testimonials/logo3.png",
+              quote: "Antarmuka yang sederhana tapi powerful. Fitur e-signature-nya top.",
+              name: "Taufik Hidayat",
+              title: "PPAT Surabaya"
+            },
+            {
+              image: "/images/testimonials/client4.jpg",
+              logo: "/images/testimonials/logo4.png",
+              quote: "SOLON menyederhanakan pekerjaan kami. Sangat membantu dalam audit internal dan eksternal.",
+              name: "Nina Kusuma",
+              title: "Notaris & PPAT Tangerang"
+            }
+          ].map((testimonial, i) => (
+            <div key={i} className="relative rounded-xl overflow-hidden shadow-md">
+              <img src={testimonial.image} alt={`Client ${i + 1}`} className="w-full h-80 object-cover" />
+              <img src={testimonial.logo} alt="Company Logo" className="absolute top-4 right-4 h-6" />
+              <div className="absolute top-4 left-4 bg-white rounded-full p-2">
+                <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6 4l12 6-12 6V4z" />
+                </svg>
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 text-sm">
+                <p className="italic mb-2">"{testimonial.quote}"</p>
+                <p className="font-semibold">{testimonial.name}</p>
+                <p className="text-xs text-gray-300">{testimonial.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
 
       {/* Pricing Section */}
