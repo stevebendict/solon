@@ -33,7 +33,7 @@ export default function SolonLandingPage() {
 
   {/* Text Content */}
   <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-4 sm:px-6">
-  <div className="text-white w-full sm:max-w-xl space-y-6">
+  <div className="text-white w-full sm:max-w-xl space-y-6 text-center sm:text-left">
       <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
         Sistem ERP Inklusif untuk Notaris & PPAT Modern
       </h1>
@@ -62,7 +62,7 @@ export default function SolonLandingPage() {
          {/* Features Section */}
       <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Tile 1 */}
           <div className="bg-white p-6 flex flex-col justify-between mb-4">
             <div>
@@ -144,7 +144,7 @@ export default function SolonLandingPage() {
          {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
-        <div className="max-w-6xl mx-auto flex overflow-x-auto snap-x snap-mandatory space-x-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:space-x-0">
+        <div className="max-w-6xl mx-auto flex overflow-x-auto snap-x snap-mandatory space-x-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:space-x-0">
 
 
           {[
@@ -196,7 +196,7 @@ export default function SolonLandingPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Paket Berlangganan</h2>
-          <div className="flex flex-row overflow-x-auto space-x-6 snap-x snap-mandatory px-1 md:grid md:grid-cols-3 md:gap-6 md:space-x-0">
+          <div className="flex flex-row overflow-x-auto space-x-6 snap-x snap-mandatory px-4 md:grid md:grid-cols-3 md:gap-6 md:space-x-0">
 
 
             {/* Starter Plan */}
@@ -255,7 +255,7 @@ export default function SolonLandingPage() {
         className="py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
       >
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-10 items-center">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-10 items-center space-y-8 md:space-y-0">
 
 
           {/* CTA Area */}
@@ -336,7 +336,7 @@ export default function SolonLandingPage() {
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm text-center md:text-left">
           <div>
             <h4 className="font-semibold mb-2">Produk</h4>
             <ul>
