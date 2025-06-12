@@ -139,15 +139,17 @@ export default function SolonLandingPage() {
         <section className="py-20 px-4 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-6">Dari X / Twitter Kami</h2>
         <div className="max-w-3xl mx-auto text-center">
-          <a
-            className="twitter-timeline"
-            data-theme="light"
-            data-tweet-limit="5"
-            href="https://twitter.com/elonmusk"
-          >
-            Tweets by @SolonTech
+        <a
+          className="twitter-timeline"
+          data-theme="light"
+          data-tweet-limit="5"
+          href="https://twitter.com/elonmusk"
+          key={new Date().getTime()}
+           >
+          Tweets by @elonmusk
           </a>
-        </div>
+      </div>
+
       </section>
 
       {/* Footer */}
