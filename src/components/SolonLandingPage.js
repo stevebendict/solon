@@ -20,7 +20,7 @@ export default function SolonLandingPage() {
     <main className="font-sans text-gray-800">
 
      {/* Sticky Header Logo */}
-<header className="sticky top-0 z-50 bg-transparent text-center py-4">
+<header className="sticky top-0 z-50 bg-black text-center py-4">
   <img src="/images/logo.png" alt="Solon Logo" className="mx-auto h-8 sm:h-10" />
 </header>
 
