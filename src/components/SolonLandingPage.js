@@ -192,31 +192,59 @@ export default function SolonLandingPage() {
       </section>
 
 
-      {/* Pricing Section */}
-      <section className="py-20 px-4 bg-white">
-        <h2 className="text-3xl font-bold text-center mb-4">Flexible plans for smarter returns</h2>
-        <p className="text-center mb-8 text-gray-600">Choose the plan that fits you the best.</p>
-        <div className="text-center mb-8">
-          <button className="bg-black text-white px-4 py-1 rounded-full mr-2">Yearly</button>
-          <button className="border border-black text-black px-4 py-1 rounded-full">Monthly</button>
-        </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-          {/* Starter */}
-          <div className="border rounded-lg p-6 text-left shadow-sm">
-            <h3 className="text-xl font-semibold mb-2">Starter</h3>
-            <p className="text-2xl font-bold">IDR 199rb<span className="text-sm font-medium">/bulan</span></p>
-            <p className="text-sm text-gray-600 mb-4">Termasuk 100 dokumen per bulan</p>
-            <button className="bg-black text-white w-full py-2 mb-2 rounded-full">Book a demo</button>
-            <button className="border w-full py-2 rounded-full">Install App</button>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>✅ Portal Klien</li>
-              <li>✅ Tanda Tangan Digital</li>
-              <li>✅ 1 Pengguna</li>
-              <li>✅ Integrasi Dasar</li>
-              <li>✅ Support via Email</li>
-            </ul>
+     
+     {/* Pricing Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Paket Berlangganan</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            {/* Starter Plan */}
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
+              <h3 className="text-xl font-semibold mb-2">Starter</h3>
+              <p className="text-gray-500 mb-4">Cocok untuk notaris atau PPAT individual yang baru memulai digitalisasi.</p>
+              <div className="text-3xl font-bold mb-2">IDR 199rb</div>
+              <p className="text-sm text-gray-400 mb-6">per bulan</p>
+              <ul className="text-sm text-gray-700 space-y-2 mb-6">
+                <li>✔️ 1 pengguna</li>
+                <li>✔️ Portal klien & tanda tangan digital</li>
+                <li>✔️ Template dokumen dasar</li>
+                <li>✔️ Export PDF & arsip digital</li>
+              </ul>
+              <button className="mt-auto bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800">Mulai Sekarang</button>
+            </div>
+
+            {/* Pro/Enterprise Plan */}
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col border-2 border-black">
+              <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
+              <p className="text-gray-500 mb-4">Solusi lengkap untuk kantor PPAT/Notaris berkapasitas tinggi & tim besar.</p>
+              <div className="text-3xl font-bold mb-2">IDR 799rb</div>
+              <p className="text-sm text-gray-400 mb-6">per bulan</p>
+              <ul className="text-sm text-gray-700 space-y-2 mb-6">
+                <li>✔️ Hingga 10 pengguna</li>
+                <li>✔️ Automasi akta & pelaporan</li>
+                <li>✔️ Backup harian & dashboard tim</li>
+                <li>✔️ Integrasi WhatsApp & Email</li>
+              </ul>
+              <button className="mt-auto bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800">Coba Gratis 14 Hari</button>
+            </div>
+
+            {/* Custom Plan */}
+            <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
+              <h3 className="text-xl font-semibold mb-2">Custom</h3>
+              <p className="text-gray-500 mb-4">Untuk instansi hukum atau B2B dengan kebutuhan kustomisasi khusus.</p>
+              <div className="text-3xl font-bold mb-2">Hubungi Kami</div>
+              <p className="text-sm text-gray-400 mb-6">Paket fleksibel sesuai kebutuhan</p>
+              <ul className="text-sm text-gray-700 space-y-2 mb-6">
+                <li>✔️ White-label portal</li>
+                <li>✔️ Integrasi sistem internal</li>
+                <li>✔️ SLA dan dukungan prioritas</li>
+                <li>✔️ Fitur eksklusif sesuai proyek</li>
+              </ul>
+              <button className="mt-auto bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-black">Hubungi Tim Kami</button>
+            </div>
+
           </div>
-          {/* Other pricing tiers omitted for brevity */}
         </div>
       </section>
 
