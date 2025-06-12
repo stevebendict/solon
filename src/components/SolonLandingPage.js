@@ -18,6 +18,7 @@ export default function SolonLandingPage() {
 }, []);
 
 
+  
   return (
     <main className="font-sans text-gray-800">
 
