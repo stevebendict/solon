@@ -19,6 +19,11 @@ export default function SolonLandingPage() {
   return (
     <main className="font-sans text-gray-800">
 
+     {/* Fixed Header Logo */}
+      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+        <img src="/images/logo.png" alt="Solon Logo" className="h-10" />
+      </header>
+
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
   {/* Background Image */}
@@ -385,6 +390,24 @@ export default function SolonLandingPage() {
           &copy; {new Date().getFullYear()} SOLON ERP. All rights reserved.
         </div>
       </footer>
+
+      {/* Fixed Bottom Navigation Bar */}
+      <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 
+        bg-white/10 backdrop-blur-xl border border-white/30 
+        shadow-lg rounded-2xl px-6 py-3 flex items-center space-x-6">
+        <a href="#features">
+          <img src="/images/icons/feature.png" alt="Fitur" className="h-7 hover:scale-110 hover:brightness-125 transition" />
+        </a>
+        <a href="#pricing">
+          <img src="/images/icons/pricing.png" alt="Harga" className="h-7 hover:scale-110 hover:brightness-125 transition" />
+        </a>
+        <a href="#demo">
+          <img src="/images/icons/demo.png" alt="Demo" className="h-7 hover:scale-110 hover:brightness-125 transition" />
+        </a>
+        <a href="https://wa.me/6285736212190">
+          <img src="/images/icons/contact.png" alt="Kontak" className="h-7 hover:scale-110 hover:brightness-125 transition" />
+        </a>
+      </nav>
 
     </main>
   );
