@@ -62,9 +62,10 @@ export default function SolonLandingPage() {
          {/* Features Section */}
       <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border border-gray-200">
           {/* Tile 1 */}
-          <div className="bg-white p-6 flex flex-col justify-between mb-4">
+          <div className="bg-white p-6 flex flex-col justify-between mb-4 border-t border-l border-gray-200
+">
             <div>
               <h3 className="font-semibold text-base mb-1">API-first integration</h3>
               <p className="text-sm text-gray-600">Easily integrate advanced retrieval and generation capabilities into any application.</p>
@@ -72,23 +73,27 @@ export default function SolonLandingPage() {
           </div>
 
           {/* Tile 2 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">Multilingual data</h3>
             <p className="text-sm text-gray-600">Analyze, retrieve, and display information across over a hundred languages.</p>
           </div>
 
           {/* Tile 3 (image button-style) */}
-          <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
+          <div className="bg-white p-6 flex items-center justify-center border-t border-l border-gray-200
+">
+            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-xs h-auto object-contain mx-auto" />
           </div>
 
           {/* Tile 4 (image left) */}
-          <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
+          <div className="bg-white p-6 flex items-center justify-center border-t border-l border-gray-200
+">
+            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full max-w-xs h-auto object-contain mx-auto" />
           </div>
 
           {/* Tile 5 (big tile) */}
-          <div className="bg-white p-8 col-span-2">
+          <div className="bg-white p-8 md:col-span-2 border-t border-l border-gray-200">
+
             <h3 className="text-2xl font-bold mb-2">Best-in-class ML</h3>
             <p className="text-gray-700 mb-4">Backed by world-class researchers, Vectara’s ML models provide unmatched performance.</p>
             <div className="text-sm text-gray-500 space-x-2">
@@ -103,37 +108,43 @@ export default function SolonLandingPage() {
           </div>
 
           {/* Tile 6 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">Performance</h3>
             <p className="text-sm text-gray-600">Ultra-fast response times with our optimized cloud infrastructure, under 100 milliseconds.</p>
           </div>
 
           {/* Tile 7 (gauge image) */}
-          <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
+          <div className="bg-white p-6 flex items-center justify-center border-t border-l border-gray-200
+">
+            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full max-w-xs h-auto object-contain mx-auto" />
           </div>
 
           {/* Tile 8 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">Hybrid retrieval</h3>
             <p className="text-sm text-gray-600">Leverage the best of both worlds – configure traditional BM25 with semantic search for optimal relevance.</p>
           </div>
 
           {/* Tile 9 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">Auto-scale features</h3>
             <p className="text-sm text-gray-600">Cloud-native architecture that automatically scales with demand, minimizing costs.</p>
             <p className="text-sm font-medium text-black mt-2">Dedicated or shared resources →</p>
           </div>
 
           {/* Tile 10 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">Stateful chat management</h3>
             <p className="text-sm text-gray-600">Store and analyze user conversations to continually refine responses and understand user intent.</p>
           </div>
 
           {/* Tile 11 */}
-          <div className="bg-white p-6">
+          <div className="bg-white p-6 border-t border-l border-gray-200
+">
             <h3 className="font-semibold text-base mb-1">High availability</h3>
             <p className="text-sm text-gray-600">Customize replication settings and dedicated nodes, for maximum resilience under peak loads.</p>
           </div>
@@ -142,7 +153,7 @@ export default function SolonLandingPage() {
 
 
          {/* Testimonials Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white ">
         <h2 className="text-3xl font-bold text-center mb-10">Dipercaya oleh Praktisi PPAT & Notaris</h2>
         <div className="max-w-6xl mx-auto flex overflow-x-auto snap-x snap-mandatory space-x-4 px-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:space-x-0">
 
