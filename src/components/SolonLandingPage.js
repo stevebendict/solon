@@ -19,10 +19,11 @@ export default function SolonLandingPage() {
   return (
     <main className="font-sans text-gray-800">
 
-     {/* Fixed Header Logo */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-transparent flex justify-center py-4">
-  <img src="/images/logo.png" alt="Logo" className="h-10" />
+     {/* Sticky Header Logo */}
+<header className="sticky top-0 z-50 bg-transparent text-center py-4">
+  <img src="/images/logo-white.png" alt="Solon Logo" className="mx-auto h-8 sm:h-10" />
 </header>
+
 
 
       {/* Hero Section */}
@@ -66,7 +67,9 @@ export default function SolonLandingPage() {
 
 
          {/* Features Section */}
-      <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
+      <section
+       id="fitur'
+        className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border border-gray-200">
           {/* Tile 1 */}
@@ -210,7 +213,9 @@ export default function SolonLandingPage() {
 
      
      {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
+      <section
+       id="pricing"
+        className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Paket Berlangganan</h2>
           <div className="flex flex-row overflow-x-auto space-x-6 snap-x snap-mandatory px-4 md:grid md:grid-cols-3 md:gap-6 md:space-x-0">
@@ -268,7 +273,8 @@ export default function SolonLandingPage() {
       </section>
 
             {/* Lead Capture Section */}
-      <section
+      <section 
+       id="demo"
         className="py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
       >
@@ -392,25 +398,22 @@ export default function SolonLandingPage() {
         </div>
       </footer>
 
-      {/* Fixed Bottom Navigation Bar */}
-      <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 
-  bg-white/20 backdrop-blur-md border border-white/30 
-  rounded-full px-4 py-2 flex justify-center items-center gap-4
-  w-[240px] sm:w-[280px] md:w-[320px]">
-  
-  <button>
-    <img src="/images/icons/feature.png" alt="Feature" className="w-6 sm:w-8" />
-  </button>
-  <button>
-    <img src="/images/icons/pricing.png" alt="Pricing" className="w-6 sm:w-8" />
-  </button>
-  <button>
-    <img src="/images/icons/demo.png" alt="Demo" className="w-6 sm:w-8" />
-  </button>
-  <button>
-    <img src="/images/icons/contact.png" alt="Contact" className="w-6 sm:w-8" />
-  </button>
+     {/* Mobile App-Style Dock Navigation */}
+<nav className="fixed bottom-5 left-1/2 -translate-x-1/2 transform bg-black/50 backdrop-blur-xl rounded-full px-6 py-3 flex justify-center items-center gap-6 w-[90vw] max-w-sm z-50 shadow-lg">
+  <a href="#fitur" className="flex flex-col items-center text-white text-xs hover:opacity-80">
+    <img src="/icons/fitur.png" alt="Fitur" className="w-6 h-6" />
+  </a>
+  <a href="#pricing" className="flex flex-col items-center text-white text-xs hover:opacity-80">
+    <img src="/icons/pricing.png" alt="Pricing" className="w-6 h-6" />
+  </a>
+  <a href="#demo" className="flex flex-col items-center text-white text-xs hover:opacity-80">
+    <img src="/icons/demo.png" alt="Demo" className="w-6 h-6" />
+  </a>
+  <a href="https://wa.me/6285736212190" className="flex flex-col items-center text-white text-xs hover:opacity-80">
+    <img src="/icons/contact.png" alt="Kontak" className="w-6 h-6" />
+  </a>
 </nav>
+
 
 
     </main>
