@@ -20,9 +20,10 @@ export default function SolonLandingPage() {
     <main className="font-sans text-gray-800">
 
      {/* Fixed Header Logo */}
-      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
-        <img src="/images/logo.png" alt="Solon Logo" className="h-10" />
-      </header>
+      <header className="fixed top-0 left-0 w-full z-50 bg-transparent flex justify-center py-4">
+  <img src="/images/logo.png" alt="Logo" className="h-10" />
+</header>
+
 
       {/* Hero Section */}
       <section className="relative h-screen w-full overflow-hidden">
