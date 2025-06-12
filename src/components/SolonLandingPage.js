@@ -62,7 +62,7 @@ export default function SolonLandingPage() {
          {/* Features Section */}
       <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4">
           {/* Tile 1 */}
           <div className="bg-white p-6 flex flex-col justify-between mb-4">
             <div>
@@ -79,12 +79,12 @@ export default function SolonLandingPage() {
 
           {/* Tile 3 (image button-style) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-[240px] h-auto object-contain" />
+            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
           </div>
 
           {/* Tile 4 (image left) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full max-w-[240px] h-auto object-contain" />
+            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
           </div>
 
           {/* Tile 5 (big tile) */}
@@ -110,7 +110,7 @@ export default function SolonLandingPage() {
 
           {/* Tile 7 (gauge image) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full max-w-[240px] h-auto object-contain" />
+            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full max-w-[240px] h-auto object-contain min-h-[120px]" />
           </div>
 
           {/* Tile 8 */}
@@ -176,7 +176,7 @@ export default function SolonLandingPage() {
             }
           ].map((testimonial, i) => (
             <div key={i} className="relative rounded-xl overflow-hidden shadow-md">
-              <img src={testimonial.image} alt={`Client ${i + 1}`} className="w-full h-80 object-cover" />
+              <img src={testimonial.image} alt={`Client ${i + 1}`} className="w-full h-64 sm:h-80 object-cover" />
               <img src={testimonial.logo} alt="Company Logo" className="absolute top-4 left-4 h-6" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent text-white p-4 text-sm">
                 <p className="italic mb-2">"{testimonial.quote}"</p>
@@ -194,13 +194,14 @@ export default function SolonLandingPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Paket Berlangganan</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+
 
             {/* Starter Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Starter</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Starter</h3>
               <p className="text-gray-500 mb-4">Cocok untuk notaris atau PPAT individual yang baru memulai digitalisasi.</p>
-              <div className="text-3xl font-bold mb-2">IDR 199rb</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 199rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
               <ul className="text-sm text-gray-700 space-y-2 mb-6">
                 <li>✔️ 1 pengguna</li>
@@ -208,14 +209,15 @@ export default function SolonLandingPage() {
                 <li>✔️ Template dokumen dasar</li>
                 <li>✔️ Export PDF & arsip digital</li>
               </ul>
-              <button className="mt-auto bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800">Mulai Sekarang</button>
+              <button className="mt-auto bg-black text-white py-3 px-6 rounded-lg text-sm sm:text-base hover:bg-gray-800">Mulai Sekarang</button>
+
             </div>
 
             {/* Pro/Enterprise Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col border-2 border-black">
-              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Enterprise</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Enterprise</h3>
               <p className="text-gray-500 mb-4">Solusi lengkap untuk kantor PPAT/Notaris berkapasitas tinggi & tim besar.</p>
-              <div className="text-3xl font-bold mb-2">IDR 799rb</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 799rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
               <ul className="text-sm text-gray-700 space-y-2 mb-6">
                 <li>✔️ Hingga 10 pengguna</li>
@@ -223,14 +225,13 @@ export default function SolonLandingPage() {
                 <li>✔️ Backup harian & dashboard tim</li>
                 <li>✔️ Integrasi WhatsApp & Email</li>
               </ul>
-              <button className="mt-auto bg-black text-white py-2 px-4 rounded-lg hover:bg-gray-800">Coba Gratis 14 Hari</button>
-            </div>
+              <button className="mt-auto bg-black text-white py-3 px-6 rounded-lg text-sm sm:text-base hover:bg-gray-800">Mulai Sekarang</button>
 
             {/* Custom Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
-              <h3 className="text-xl font-semibold mb-2 sm:text-2xl">Custom</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">Custom</h3>
               <p className="text-gray-500 mb-4">Untuk instansi hukum atau B2B dengan kebutuhan kustomisasi khusus.</p>
-              <div className="text-3xl font-bold mb-2">Hubungi Kami</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">Hubungi Kami</div>
               <p className="text-sm text-gray-400 mb-6">Paket fleksibel sesuai kebutuhan</p>
               <ul className="text-sm text-gray-700 space-y-2 mb-6">
                 <li>✔️ White-label portal</li>
@@ -238,7 +239,7 @@ export default function SolonLandingPage() {
                 <li>✔️ SLA dan dukungan prioritas</li>
                 <li>✔️ Fitur eksklusif sesuai proyek</li>
               </ul>
-              <button className="mt-auto bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-black">Hubungi Tim Kami</button>
+              <button className="mt-auto bg-black text-white py-3 px-6 rounded-lg text-sm sm:text-base hover:bg-gray-800">Hubungi Tim Kami</button>
             </div>
 
           </div>
