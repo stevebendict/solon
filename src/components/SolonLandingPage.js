@@ -259,7 +259,7 @@ export default function SolonLandingPage() {
         </div>
       </section>
 
-      {/* Lead Capture Section */}
+            {/* Lead Capture Section */}
       <section
         className="py-20 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/section-demo-bg.jpg')" }}
@@ -267,15 +267,15 @@ export default function SolonLandingPage() {
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* CTA Area */}
-          <div>
-            <h2 className="text-4xl font-bold text-white mb-4">Coba Solon Sekarang</h2>
+          <div className="text-white">
+            <h2 className="text-4xl font-bold mb-4">Coba Solon Sekarang</h2>
             <p className="text-lg text-white/90 mb-6">
               SOLON ERP dirancang khusus untuk Notaris & PPAT. Dapatkan demo interaktif tanpa biaya sekarang.
             </p>
           </div>
 
           {/* Form Card */}
-          <div className="bg-white p-8 rounded-xl shadow-xl">
+          <div className="bg-white p-8 rounded-xl shadow-xl w-full md:max-w-md">
             <h3 className="text-2xl font-bold mb-4 text-gray-800">Coba Demo Sekarang</h3>
             <form className="space-y-4">
               <input
@@ -316,9 +316,9 @@ export default function SolonLandingPage() {
               </div>
             </form>
           </div>
-
         </div>
       </section>
+
 
       {/* FAQ Section */}
       <section className="py-20 px-4 bg-white">
