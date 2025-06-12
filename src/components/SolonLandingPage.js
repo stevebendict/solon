@@ -21,7 +21,7 @@ export default function SolonLandingPage() {
 
      {/* Sticky Header Logo */}
 <header className="sticky top-0 z-50 bg-transparent text-center py-4">
-  <img src="/images/logo-white.png" alt="Solon Logo" className="mx-auto h-8 sm:h-10" />
+  <img src="/images/logo.png" alt="Solon Logo" className="mx-auto h-8 sm:h-10" />
 </header>
 
 
@@ -401,7 +401,7 @@ export default function SolonLandingPage() {
      {/* Mobile App-Style Dock Navigation */}
 <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 transform bg-black/50 backdrop-blur-xl rounded-full px-6 py-3 flex justify-center items-center gap-6 w-[90vw] max-w-sm z-50 shadow-lg">
   <a href="#feature" className="flex flex-col items-center text-white text-xs hover:opacity-80">
-    <img src="/icons/fitur.png" alt="Fitur" className="w-6 h-6" />
+    <img src="/icons/feature.png" alt="Fitur" className="w-6 h-6" />
   </a>
   <a href="#pricing" className="flex flex-col items-center text-white text-xs hover:opacity-80">
     <img src="/icons/pricing.png" alt="Pricing" className="w-6 h-6" />
