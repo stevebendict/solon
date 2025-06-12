@@ -227,6 +227,8 @@ export default function SolonLandingPage() {
               </ul>
               <button className="mt-auto bg-black text-white py-3 px-6 rounded-lg text-sm sm:text-base hover:bg-gray-800">Mulai Sekarang</button>
 
+             </div>
+
             {/* Custom Plan */}
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Custom</h3>
