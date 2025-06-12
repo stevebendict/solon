@@ -143,7 +143,7 @@ export default function SolonLandingPage() {
             className="twitter-timeline"
             data-theme="light"
             data-tweet-limit="5"
-            href="https://x.com/PalantirTech"
+            href="https://x.com/elonmusk"
           >
             Tweets by @SolonTech
           </a>
