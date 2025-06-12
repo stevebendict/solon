@@ -39,29 +39,29 @@ export default function SolonLandingPage() {
         </div>
       </section>
 
-      {/* Features Section */}
+         {/* Features Section */}
       <section className="py-20 px-4 bg-white">
         <h2 className="text-3xl font-bold text-center mb-12">Fitur & Kinerja</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* API Integration */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm text-center">
-            <img src="/images/element/api.png" alt="API Integration" className="w-12 h-12 mx-auto mb-4" />
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[1fr]">
+          {/* Fitur 1 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur1.png" alt="Fitur 1" className="w-10 h-10 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Integrasi API</h3>
             <p className="text-sm text-gray-600">Terhubung dengan sistem lain secara otomatis dan real time.</p>
           </div>
 
-          {/* Multi Language */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm text-center">
-            <img src="/images/element/multilang.png" alt="Multilingual" className="w-12 h-12 mx-auto mb-4" />
+          {/* Fitur 2 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur2.png" alt="Fitur 2" className="w-10 h-10 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Dukungan Multi-Bahasa</h3>
             <p className="text-sm text-gray-600">Gunakan antarmuka dan template dalam berbagai bahasa.</p>
           </div>
 
-          {/* Main Feature Highlight */}
-          <div className="bg-white p-8 rounded-xl shadow-md border col-span-1 md:col-span-2 row-span-2 flex flex-col justify-center items-start">
-            <img src="/images/element/engine.png" alt="Performance" className="w-16 h-16 mb-4" />
+          {/* Fitur 3 (Highlight) */}
+          <div className="bg-white p-8 rounded-xl shadow-md border col-span-1 md:col-span-2 row-span-2 flex flex-col justify-center">
+            <img src="/images/element/fitur3.png" alt="Fitur 3" className="w-12 h-12 mb-4" />
             <h3 className="text-xl font-bold mb-2">Dirancang untuk Kinerja Hukum Tingkat Tinggi</h3>
-            <p className="text-gray-600 text-sm max-w-md">SOLON ERP memberdayakan Notaris & PPAT untuk mengelola dokumen dan klien dengan efisiensi optimal, kecepatan, dan kepatuhan hukum yang tinggi.</p>
+            <p className="text-gray-600 text-sm">SOLON ERP memberdayakan Notaris & PPAT untuk mengelola dokumen dan klien dengan efisiensi optimal, kecepatan, dan kepatuhan hukum yang tinggi.</p>
             <div className="mt-4 text-sm text-blue-600 space-x-2">
               <span className="underline cursor-pointer">eSignature</span>
               <span className="underline cursor-pointer">Template Akta</span>
@@ -69,28 +69,50 @@ export default function SolonLandingPage() {
             </div>
           </div>
 
-          {/* Auto Scaling */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm text-center">
-            <img src="/images/element/autoscale.png" alt="Autoscaling" className="w-12 h-12 mx-auto mb-4" />
+          {/* Fitur 4 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur4.png" alt="Fitur 4" className="w-10 h-10 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Auto Scaling</h3>
             <p className="text-sm text-gray-600">Menyesuaikan kapasitas dengan beban kerja pengguna.</p>
           </div>
 
-          {/* Secure Storage */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm text-center">
-            <img src="/images/element/security.png" alt="Security" className="w-12 h-12 mx-auto mb-4" />
+          {/* Fitur 5 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur5.png" alt="Fitur 5" className="w-10 h-10 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Keamanan Berlapis</h3>
             <p className="text-sm text-gray-600">Enkripsi dan audit log untuk memastikan kepatuhan & perlindungan data.</p>
           </div>
 
-          {/* Availability */}
-          <div className="bg-gray-50 p-6 rounded-xl shadow-sm text-center">
-            <img src="/images/element/availability.png" alt="Availability" className="w-12 h-12 mx-auto mb-4" />
+          {/* Fitur 6 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur6.png" alt="Fitur 6" className="w-10 h-10 mb-3" />
             <h3 className="font-semibold text-lg mb-2">Ketersediaan Tinggi</h3>
             <p className="text-sm text-gray-600">Server cloud redundant dan monitoring aktif 24/7.</p>
           </div>
+
+          {/* Fitur 7 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur7.png" alt="Fitur 7" className="w-10 h-10 mb-3" />
+            <h3 className="font-semibold text-lg mb-2">Pencatatan Aktivitas</h3>
+            <p className="text-sm text-gray-600">Audit trail otomatis untuk setiap tindakan pengguna.</p>
+          </div>
+
+          {/* Fitur 8 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur8.png" alt="Fitur 8" className="w-10 h-10 mb-3" />
+            <h3 className="font-semibold text-lg mb-2">Manajemen Tim</h3>
+            <p className="text-sm text-gray-600">Kelola banyak pengguna dan peran dengan hak akses yang disesuaikan.</p>
+          </div>
+
+          {/* Fitur 9 */}
+          <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+            <img src="/images/element/fitur9.png" alt="Fitur 9" className="w-10 h-10 mb-3" />
+            <h3 className="font-semibold text-lg mb-2">Analitik & Pelaporan</h3>
+            <p className="text-sm text-gray-600">Lacak performa dan aktivitas operasional secara real time.</p>
+          </div>
         </div>
       </section>
+
 
          {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
