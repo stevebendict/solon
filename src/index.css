@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply text-sm sm:text-base;
+  @apply text-base sm:text-sm;
 }
