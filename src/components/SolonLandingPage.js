@@ -60,7 +60,7 @@ export default function SolonLandingPage() {
 
 
          {/* Features Section */}
-      <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16"">
+      <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Tile 1 */}
