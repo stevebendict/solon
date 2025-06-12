@@ -60,11 +60,11 @@ export default function SolonLandingPage() {
 
 
          {/* Features Section */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white scroll-mt-20 sm:scroll-mt-16"">
         <h2 className="text-3xl font-bold text-left max-w-6xl mx-auto mb-12">Features & Performance</h2>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Tile 1 */}
-          <div className="bg-white p-6 flex flex-col justify-between">
+          <div className="bg-white p-6 flex flex-col justify-between mb-4">
             <div>
               <h3 className="font-semibold text-base mb-1">API-first integration</h3>
               <p className="text-sm text-gray-600">Easily integrate advanced retrieval and generation capabilities into any application.</p>
@@ -79,12 +79,12 @@ export default function SolonLandingPage() {
 
           {/* Tile 3 (image button-style) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-xs" />
+            <img src="/images/element/fitur3.png" alt="Multilang UI" className="w-full max-w-[240px] h-auto object-contain" />
           </div>
 
           {/* Tile 4 (image left) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full h-auto object-contain" />
+            <img src="/images/element/fitur4.png" alt="Flow chart" className="w-full max-w-[240px] h-auto object-contain" />
           </div>
 
           {/* Tile 5 (big tile) */}
@@ -110,7 +110,7 @@ export default function SolonLandingPage() {
 
           {/* Tile 7 (gauge image) */}
           <div className="bg-white p-6 flex items-center justify-center">
-            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full h-auto object-contain" />
+            <img src="/images/element/fitur7.png" alt="Gauge graph" className="w-full max-w-[240px] h-auto object-contain" />
           </div>
 
           {/* Tile 8 */}
