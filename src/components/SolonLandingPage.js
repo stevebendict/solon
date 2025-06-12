@@ -393,22 +393,25 @@ export default function SolonLandingPage() {
       </footer>
 
       {/* Fixed Bottom Navigation Bar */}
-      <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 
-        bg-white/10 backdrop-blur-xl border border-white/30 
-        shadow-lg rounded-2xl px-6 py-3 flex items-center space-x-6">
-        <a href="#features">
-          <img src="/images/icons/feature.png" alt="Fitur" className="h-7 hover:scale-110 hover:brightness-125 transition" />
-        </a>
-        <a href="#pricing">
-          <img src="/images/icons/pricing.png" alt="Harga" className="h-7 hover:scale-110 hover:brightness-125 transition" />
-        </a>
-        <a href="#demo">
-          <img src="/images/icons/demo.png" alt="Demo" className="h-7 hover:scale-110 hover:brightness-125 transition" />
-        </a>
-        <a href="https://wa.me/6285736212190">
-          <img src="/images/icons/contact.png" alt="Kontak" className="h-7 hover:scale-110 hover:brightness-125 transition" />
-        </a>
-      </nav>
+      <nav className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 
+  bg-white/20 backdrop-blur-md border border-white/30 
+  rounded-full px-4 py-2 flex justify-center items-center gap-4
+  w-[240px] sm:w-[280px] md:w-[320px]">
+  
+  <button>
+    <img src="/images/icons/feature.png" alt="Feature" className="w-6 sm:w-8" />
+  </button>
+  <button>
+    <img src="/images/icons/pricing.png" alt="Pricing" className="w-6 sm:w-8" />
+  </button>
+  <button>
+    <img src="/images/icons/demo.png" alt="Demo" className="w-6 sm:w-8" />
+  </button>
+  <button>
+    <img src="/images/icons/contact.png" alt="Contact" className="w-6 sm:w-8" />
+  </button>
+</nav>
+
 
     </main>
   );
