@@ -1,21 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 
 export default function SolonLandingPage() {
-  useEffect(() => {
-  const twitterEmbedExists = document.querySelector("script[src='https://platform.twitter.com/widgets.js']");
-  if (!twitterEmbedExists) {
-    const script = document.createElement("script");
-    script.setAttribute("src", "https://platform.twitter.com/widgets.js");
-    script.setAttribute("async", "true");
-    script.setAttribute("charset", "utf-8");
-    document.body.appendChild(script);
-  } else {
-    if (window.twttr && window.twttr.widgets) {
-      window.twttr.widgets.load();
-    }
-  }
-}, []);
 
  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
@@ -340,22 +326,7 @@ export default function SolonLandingPage() {
       </section>
 
 
-          {/* Twitter Feed Section */}
-        <section className="py-20 px-4 bg-gray-50">
-        <h2 className="text-3xl font-bold text-center mb-6">Dari X / Twitter Kami</h2>
-        <div className="max-w-3xl mx-auto text-center">
-        <a
-          className="twitter-timeline"
-          data-theme="light"
-          data-tweet-limit="5"
-          href="https://twitter.com/elonmusk"
-          key={new Date().getTime()}
-           >
-          Tweets by @elonmusk
-          </a>
-      </div>
-
-      </section>
+  
 
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-4">
