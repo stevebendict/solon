@@ -23,22 +23,44 @@ export default function SolonLandingPage() {
     <main className="font-sans text-gray-800">
 
       {/* Hero Section */}
-      <section className="min-h-screen bg-black text-white flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
-          SOLON ERP: Legal Practice, Smarter.
-        </h1>
-        <p className="text-xl md:text-2xl max-w-2xl mb-6">
-          ERP khusus untuk Notaris & PPAT. Sederhanakan dokumen, klien, dan proses hukum Anda.
-        </p>
-        <div className="flex gap-4">
-          <button className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-300">
-            Download Booklet
-          </button>
-          <a href="https://wa.me/yourwhatsapplink" className="bg-green-500 px-6 py-3 rounded-full font-semibold hover:bg-green-600">
-            Hubungi via WhatsApp
-          </a>
-        </div>
-      </section>
+      <section className="relative h-screen w-full overflow-hidden">
+  {/* Background Image */}
+  <img
+    src="/images/hero-background.png"
+    alt="Hero Background"
+    className="absolute inset-0 w-full h-full object-cover object-center"
+  />
+
+  {/* Overlay kiri ke kanan */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent z-10" />
+
+  {/* Text Content */}
+  <div className="relative z-20 flex items-center h-full max-w-6xl mx-auto px-6">
+    <div className="text-white max-w-xl">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        Sistem ERP Inklusif untuk Notaris & PPAT Modern
+      </h1>
+      <p className="text-lg md:text-xl text-gray-300 mb-8">
+        SOLON menyederhanakan pengelolaan dokumen hukum Anda, dengan teknologi terintegrasi dan automasi pintar.
+      </p>
+      <div className="flex gap-4">
+        <a
+          href="#download"
+          className="bg-white text-black font-semibold px-6 py-3 rounded-xl shadow hover:bg-gray-200 transition"
+        >
+          Download Booklet
+        </a>
+        <a
+          href="#demo"
+          className="border border-white text-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition"
+        >
+          Lihat Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
          {/* Features Section */}
       <section className="py-20 px-4 bg-white">
