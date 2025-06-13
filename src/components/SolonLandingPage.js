@@ -225,7 +225,7 @@ export default function SolonLandingPage() {
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col snap-start min-w-[280px] md:min-w-0">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Starter</h3>
               <p className="text-gray-500 mb-4">Cocok untuk notaris atau PPAT individual yang baru memulai digitalisasi.</p>
-              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 199rb</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 3.999rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
               <ul className="text-sm text-gray-700 space-y-2 mb-6">
                 <li>✔️ 1 pengguna</li>
@@ -241,7 +241,7 @@ export default function SolonLandingPage() {
             <div className="bg-white p-8 rounded-xl shadow-md flex flex-col snap-start min-w-[280px] md:min-w-0 border-2 border-black">
               <h3 className="text-lg sm:text-xl font-semibold mb-2">Enterprise</h3>
               <p className="text-gray-500 mb-4">Solusi lengkap untuk kantor PPAT/Notaris berkapasitas tinggi & tim besar.</p>
-              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 799rb</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">IDR 8.999rb</div>
               <p className="text-sm text-gray-400 mb-6">per bulan</p>
               <ul className="text-sm text-gray-700 space-y-2 mb-6">
                 <li>✔️ Hingga 10 pengguna</li>
