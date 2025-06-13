@@ -401,16 +401,16 @@ export default function SolonLandingPage() {
      {/* Mobile App-Style Dock Navigation */}
 <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 transform bg-black/50 backdrop-blur-xl rounded-full px-6 py-3 flex justify-center items-center gap-6 w-[90vw] max-w-sm z-50 shadow-lg">
   <a href="#feature" className="flex flex-col items-center text-white text-xs hover:opacity-80">
-    <img src="images/icons/feature.png" alt="Fitur" className="w-15 h-15" />
+    <img src="images/icons/feature.png" alt="Fitur" className="w-12 h-12" />
   </a>
   <a href="#pricing" className="flex flex-col items-center text-white text-xs hover:opacity-80">
-    <img src="images/icons/pricing.png" alt="Pricing" className="w-15 h-15" />
+    <img src="images/icons/pricing.png" alt="Pricing" className="w-12 h-12" />
   </a>
   <a href="#demo" className="flex flex-col items-center text-white text-xs hover:opacity-80">
-    <img src="images/icons/demo.png" alt="Demo" className="w-15 h-15" />
+    <img src="images/icons/demo.png" alt="Demo" className="w-12 h-12" />
   </a>
   <a href="https://wa.me/6285736212190" className="flex flex-col items-center text-white text-xs hover:opacity-80">
-    <img src="images/icons/contact.png" alt="Kontak" className="w-15 h-15" />
+    <img src="images/icons/contact.png" alt="Kontak" className="w-12 h-12" />
   </a>
 </nav>
 
