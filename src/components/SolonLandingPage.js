@@ -139,7 +139,7 @@ export default function SolonLandingPage() {
           {/* Tile 9 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1"> Cloud-Native Performance Core</h3>
+            <h3 className="font-semibold text-base mb-1">Cloud-Native Performance Core</h3>
             <p className="text-sm text-gray-600">SOLON dibangun menggunakan arsitektur cloud-native yang memungkinkan pemrosesan cepat dan stabil, bahkan saat volume transaksi tinggi.</p>
             <p className="text-sm font-medium text-black mt-2">Dedicated or shared resources →</p>
           </div>
@@ -154,7 +154,7 @@ export default function SolonLandingPage() {
           {/* Tile 11 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1" Real-Time Collaborative Framework</h3>
+            <h3 className="font-semibold text-base mb-1">Real-Time Collaborative Framework</h3>
             <p className="text-sm text-gray-600">Arsitektur kolaboratif yang memungkinkan seluruh pengguna sistem bekerja secara simultan tanpa konflik status atau data.</p>
           </div>
         </div>
