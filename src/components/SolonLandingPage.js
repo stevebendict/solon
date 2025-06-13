@@ -77,15 +77,15 @@ export default function SolonLandingPage() {
 ">
             <div>
               <h3 className="font-semibold text-base mb-1">API-first integration</h3>
-              <p className="text-sm text-gray-600">Easily integrate advanced retrieval and generation capabilities into any application.</p>
+              <p className="text-sm text-gray-600">Mendukung integrasi sistem melalui arsitektur API-first yang memungkinkan pertukaran data secara langsung antara SOLON ERP dengan sistem eksternal, seperti e-Filing, sistem bank, maupun platform dokumen resmi.</p>
             </div>
           </div>
 
           {/* Tile 2 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">Multilingual data</h3>
-            <p className="text-sm text-gray-600">Analyze, retrieve, and display information across over a hundred languages.</p>
+            <h3 className="font-semibold text-base mb-1">Contextual Role Assignment</h3>
+            <p className="text-sm text-gray-600">Sistem penugasan berbasis peran yang dipicu oleh kondisi tertentu, disertai dengan notifikasi instan ke kanal seperti WhatsApp atau email internal.</p>
           </div>
 
           {/* Tile 3 (image button-style) */}
@@ -103,24 +103,24 @@ export default function SolonLandingPage() {
           {/* Tile 5 (big tile) */}
           <div className="bg-white p-8 md:col-span-2 border-t border-l border-gray-200">
 
-            <h3 className="text-2xl font-bold mb-2">Best-in-class ML</h3>
-            <p className="text-gray-700 mb-4">Backed by world-class researchers, Vectara’s ML models provide unmatched performance.</p>
+            <h3 className="text-2xl font-bold mb-2">Best-in-Class Legal ERP</h3>
+            <p className="text-gray-700 mb-4">SOLON ERP dirancang khusus untuk mencerminkan alur kerja aktual kantor notaris dan PPAT, dengan struktur end-to-end mulai dari input data hingga pencetakan invoice. Dukungan penuh terhadap audit trail dan notifikasi lintas platform menjadikan proses hukum lebih transparan, cepat, dan akurat.</p>
             <div className="text-sm text-gray-500 space-x-2">
-              <span>Embedding</span>
+              <span>ERP</span>
               <span>&gt;</span>
-              <span>Reranking</span>
+              <span>POS</span>
               <span>&gt;</span>
-              <span>Hallucination detection</span>
+              <span>HRIS</span>
               <span>&gt;</span>
-              <span>Generative LLMs</span>
+              <span>CROM</span>
             </div>
           </div>
 
           {/* Tile 6 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">Performance</h3>
-            <p className="text-sm text-gray-600">Ultra-fast response times with our optimized cloud infrastructure, under 100 milliseconds.</p>
+            <h3 className="font-semibold text-base mb-1">Live Document Sync</h3>
+            <p className="text-sm text-gray-600">Setiap pembaruan status dokumen dan transaksi langsung tersinkronisasi secara real-time di seluruh pengguna sistem.</p>
           </div>
 
           {/* Tile 7 (gauge image) */}
@@ -132,30 +132,30 @@ export default function SolonLandingPage() {
           {/* Tile 8 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">Hybrid retrieval</h3>
-            <p className="text-sm text-gray-600">Leverage the best of both worlds – configure traditional BM25 with semantic search for optimal relevance.</p>
+            <h3 className="font-semibold text-base mb-1">Smart Billing & Refund System</h3>
+            <p className="text-sm text-gray-600">SOLON secara otomatis menghasilkan invoice berdasarkan transaksi valid, dan menghitung kelebihan pembayaran jika ditemukan selisih antara estimasi dan realisasi biaya.</p>
           </div>
 
           {/* Tile 9 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">Auto-scale features</h3>
-            <p className="text-sm text-gray-600">Cloud-native architecture that automatically scales with demand, minimizing costs.</p>
+            <h3 className="font-semibold text-base mb-1"> Cloud-Native Performance Core</h3>
+            <p className="text-sm text-gray-600">SOLON dibangun menggunakan arsitektur cloud-native yang memungkinkan pemrosesan cepat dan stabil, bahkan saat volume transaksi tinggi.</p>
             <p className="text-sm font-medium text-black mt-2">Dedicated or shared resources →</p>
           </div>
 
           {/* Tile 10 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">Stateful chat management</h3>
-            <p className="text-sm text-gray-600">Store and analyze user conversations to continually refine responses and understand user intent.</p>
+            <h3 className="font-semibold text-base mb-1">Encrypted Legal Archive</h3>
+            <p className="text-sm text-gray-600">Sistem penyimpanan dokumen hukum berbasis enkripsi dan dilengkapi dengan mekanisme backup otomatis.</p>
           </div>
 
           {/* Tile 11 */}
           <div className="bg-white p-6 border-t border-l border-gray-200
 ">
-            <h3 className="font-semibold text-base mb-1">High availability</h3>
-            <p className="text-sm text-gray-600">Customize replication settings and dedicated nodes, for maximum resilience under peak loads.</p>
+            <h3 className="font-semibold text-base mb-1" Real-Time Collaborative Framework</h3>
+            <p className="text-sm text-gray-600">Arsitektur kolaboratif yang memungkinkan seluruh pengguna sistem bekerja secara simultan tanpa konflik status atau data.</p>
           </div>
         </div>
       </section>
